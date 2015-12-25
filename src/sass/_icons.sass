@@ -1,0 +1,42 @@
+@each $s in icon-lupa,bird,icon-f,icon-vk,icon-tw,icon-g,icon-ok,icon-tv,icon__bay
+	.#{$s}
+		display: inline-block
+		+s(#{$s})
+
+
+
+.icon-lupa
+	position: absolute
+	top: 15px
+	right: 0
+	z-index: 1
+	background-color: $n
+	cursor: pointer
+.icon__heart
+	position: absolute
+	top: 20px
+	right: 20px
+	width: 20px
+	height: 18px
+	background-image: url("../img/icon__heart.jpg")
+	z-index: 1
+	&:hover
+		+gray
+
+.btn__slider_prew
+	+s(icon-prev)
+	background-color: $n
+	+tr(.3s)
+	&:hover
+		cursor: pointer
+		+gray
+.btn__slider_next
+	+s(icon-next)
+	background-color: $n
+	+tr(.3s)
+	&:hover
+		cursor: pointer
+		+gray
+
+
+	// ,icon-close,icon-shoe,icon-child,icon-auto,icon-acses,icon-cult,icon-bag,icon-sport,icon-health,icon-tea,icon-home,icon-teh

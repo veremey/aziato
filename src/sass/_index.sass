@@ -1,0 +1,74 @@
+.bigest
+	position: relative
+	height: 345px
+	text-align: center
+	background-color: $yellow
+	+clr
+	img
+		width: 100%
+		max-width: 100%
+		vertical-align: top
+	&__ower
+		+vcenter
+		z-index: 5
+		p
+			font-size: 12px
+			text-transform: uppercase
+			color: #FFF
+			margin-bottom: 15px
+			+lr
+
+.prod__hs
+	position: relative
+	width: 31%
+	float: left
+	vertical-align: top
+	margin-right: 3%
+	padding-bottom: 15px
+	background-color: #FFF
+	+clr
+	&:last-child
+		margin-right: 0
+	&_transparent
+		@extend .prod__hs
+		background-color: $n
+		padding-bottom: 0
+	&_img
+		text-align: center
+		padding: 25px 10px 15px
+		img
+			max-width: 100%
+			vertical-align: middle
+	&_text
+		margin: 10px 20px 15px
+		a
+			+link
+	.stars
+		float: right
+		margin-right: 20px
+		bottom: 4px
+
+.prod__hss
+	width: 100%
+	float: left
+	vertical-align: top
+	margin-bottom: 20px
+	padding: 10px
+	background-color: #FFF
+	+clr
+	&:last-child
+		margin-bottom: 0
+	&_text
+		width: 30%
+		float: left
+		margin: 10px 0
+		a
+			+link
+	&_img
+		float: right
+		width: 60%
+		text-align: center
+		img
+			max-width: 100%
+			vertical-align: middle
+			max-height: 145px

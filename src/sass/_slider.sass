@@ -1,0 +1,73 @@
+.slider__delivery
+	background-color: #EDEFF1
+	+clr
+.slider__item
+	display: inline-block //del
+	margin-bottom: 20px//del
+	position: relative
+	height: 375px
+	margin-right: 20px
+	vertical-align: top
+	+clr
+	&_m,
+	&_transparent
+		background-color: #FFF
+		position: relative
+		width: 270px
+		height: 375px
+		vertical-align: top
+		padding: 20px
+		+clr
+	&_transparent
+		padding: 0
+		background-color: $n
+		.prod__hss
+			min-height: 178px
+		.prod__hss_text,
+		.prod__hss_img
+			width: 50%
+	&_x
+		width: 570px
+		padding: 20px
+		height: 375px
+		position: relative
+		background-color: #FFF
+		+clr
+	&_img
+		text-align: center
+		height: 245px
+		// margin-top: 10px
+		img
+			vertical-align: middle
+			max-width: 100%
+	.star
+		float: right
+		bottom: 4px
+
+.big__slide
+	&_left
+		float: left
+		width: 40%
+		vertical-align: top
+		padding-top: 15px
+	&_text
+		margin-top: 20px
+		vertical-align: top
+		a
+			display: block
+			margin: 20px 0
+			font-size: 18px
+			line-height: 30px
+			color: $black
+			text-transform: uppercase
+			+lb
+			&:hover
+				color: $red
+	&_img
+		float: right
+		width: 60%
+		text-align: center
+		margin-top: 20px
+		img
+			max-width: 100%
+			vertical-align: middle

@@ -1,0 +1,101 @@
+.footer
+	+clr
+	&__top
+		width: 100%
+		background-color: #FFF
+		height: 61px
+		margin: 25px 0 65px
+		+justify
+		a
+			display: inline-block
+			line-height: 60px
+			img
+				display: inline-block
+				vertical-align: middle
+				max-width: 100%
+			&:hover
+				opacity: 0.7
+	&__main
+		padding-bottom: 60px
+		border-bottom: 1px solid #d9dcde
+		+clr
+	&__bottom
+		padding: 55px 0 110px
+		+clr
+	&__box
+		width: 25%
+		float: left
+		h3
+			font-size: 13px
+			color: $black
+			text-transform: uppercase
+			+lb
+	&__logo
+		display: inline-block
+		vertical-align: top
+		+gray
+		&:hover
+			+gray-zero
+		img
+			display: inline-block
+			vertical-align: top
+	&__list
+		font-size: 0
+		margin-top: 25px
+		li
+			display: block
+			margin-bottom: 5px
+		a
+			display: inline-block
+			font-size: 14px
+			color: $gray
+			+lr
+			&:hover
+				color: $red
+.copy
+	width: 40%
+	float: left
+	font-size: 14px
+	color: $gray
+	+lr
+.dev_mail
+	float: left
+	color: $gray
+	font-size: 14px
+	margin-left: 11%
+	+lr
+
+.footer__socio
+	float: right
+	width: 15%
+	+justify
+	a
+		position: relative
+		display: inline-block
+		height: 25px
+		width: 25px
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		&:before
+			content: ""
+			+vcenter
+.socio__f
+	// background-color: #485ca9
+	&:before
+		+s(icon-f)
+.socio__vk
+	// background-color: #396da1
+	&:before
+		+s(icon-vk)
+.socio__tw
+	// background-color: #33a1c1
+	&:before
+		+s(icon-tw)
+.socio__g
+	// background-color: #e34733
+	&:before
+		+s(icon-g)
+.socio__ok
+	// background-color: #e78627
+	&:before
+		+s(icon-ok)

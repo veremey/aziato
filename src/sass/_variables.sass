@@ -1,0 +1,99 @@
+.clear
+	clear: both
+	height: 0
+	display: table
+.center
+	+vcenter
+
+.section
+	background-color: #FFF
+	height: 60px
+	padding: 0 25px
+	margin: 25px 0
+	&__btn
+		float: right
+		margin-top: 20px
+
+.empty
+	+clr
+.prod__price
+	float: left
+	s
+		font-size: 14px
+		text-transform: uppercase
+		color: $gray
+		margin-right: 10px
+		+lr
+	strong
+		text-transform: uppercase
+		font-size: 14px
+		color: $black
+		+lbl
+
+.stars
+	position: relative
+	float: right
+	width: 83px
+	height: 13px
+	bottom: 4px
+	z-index: 2
+	.star
+		display: inline-block
+		vertical-align: middle
+		width: 13px
+		height: 11px
+		margin-right: 0
+	.star_l
+		display: block
+		float: left
+		width: 7px
+		height: 11px
+		background: url(../img/star_p.png)
+		cursor: pointer
+		margin-right: 0
+	.star_r
+		display: block
+		float: left
+		width: 6px
+		height: 11px
+		background: url(../img/star_p.png) 100% 0 no-repeat
+		cursor: pointer
+		margin-right: 0
+	.star_l.active
+		background: url(../img/star_a.png) 0 0 no-repeat
+	.star_r.active
+		background: url(../img/star_a.png) 100% 0 no-repeat
+
+
+.bay
+	display: block
+	height: 40px
+	width: 170px
+	border: 1px solid #d1d5d9
+	border-radius: 40px
+	&__price
+		position: relative
+		float: left
+		border-right: 1px solid #d1d5d9
+		height: 40px
+		width: 114px
+		white-space: nowrap
+	s
+		font-size: 14px
+		text-transform: uppercase
+		color: #929497
+		margin-right: 10px
+		+lr
+	strong
+		font-size: 14px
+		text-transform: uppercase
+		color: $black
+		+lr
+	&__img
+		float: left
+		height: 40px
+		width: 52px
+		position: relative
+		i
+			+vcenter
+

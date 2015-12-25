@@ -1,0 +1,137 @@
+.aside
+	width: 23%
+	float: left
+	margin-right: 2%
+	background-color: #FFF
+	+clr
+	&__head
+		height: 45px
+		padding: 0 25px
+		border-bottom: 2px solid #f7f7f7
+		+clr
+		p
+			float: left
+			font-size: 14px
+			color: $gray
+			line-height: 45px
+			+lb
+		span
+			float: right
+			font-size: 14px
+			color: #31363A
+			line-height: 45px
+			+lb
+
+
+.alist
+	font-size: 0
+	+clr
+	&__item
+		position: relative
+		height: 59px
+		border-bottom: 1px solid #F3F3F3
+		will-change: transform
+		+tr(.3s)
+		z-index: 300
+		&:after
+			content: ""
+			position: absolute
+			top: 25px
+			right: 20px
+			+arr(4, 6, $gray, r)
+			+tr(.2s)
+		&:hover
+			box-shadow: 0 -1px 3px rgba(0, 0, 0, .3) inset
+			&::after
+				right: 15px
+			.alist__item_link
+				color: $red
+				padding-left: 60px
+				i
+					+gray-zero
+					left: 30px
+			.alist__sub
+				display: block
+		&_link
+			display: block
+			padding-left: 55px
+			font-size: 13px
+			line-height: 59px
+			text-transform: uppercase
+			color: #333
+			+lbl
+			+tr(.3s)
+			i
+				position: absolute
+				top: 20px
+				left: 25px
+				+gray
+				+tr(.3s)
+
+.alist__view
+	width: 40%
+	float: right
+	border: 2px solid #edeff1
+	padding: 13px
+	+clr
+	+tr(.3s)
+	&:hover
+		opacity: 0.7
+	img
+		width: 70%
+		display: inline-block
+		max-width: 100%
+		vertical-align: top
+	.title__yellow
+		margin-bottom: 15px
+	&_text
+		float: left
+		width: 30%
+		p
+			font-size: 14px
+			color: $black
+			+lr
+			margin-bottom: 15px
+		s
+			font-size: 14px
+			text-transform: uppercase
+			color: $gray
+			margin-right: 10px
+			+lr
+		strong
+			font-size: 14px
+			color: $black
+			text-transform: uppercase
+			+lb
+
+.alist__sub
+	display: none
+	position: absolute
+	width: 840px
+	top: 0
+	left: 100%
+	padding: 30px 40px 30px 30px
+	background-color: #FFF
+	+clr
+
+.blist
+	float: left
+	width: 200px
+	padding-right: 10px
+	font-size: 0
+	+clr
+	&__item
+		padding-bottom: 10px
+		&:first-child
+			padding-bottom: 20px
+		h4
+			font-size: 14px
+			color: $black
+			+lb
+		a
+			font-size: 14px
+			color: $gray
+			+lr
+			&:hover
+				color: $red
+

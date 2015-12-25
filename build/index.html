@@ -7,12 +7,561 @@
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" media="all" href="css/style.css" >
 	<script src="js/app.js"></script>
+
 </head>
 <body>
 <!-- BEGIN  out-->
+<header class="header">
+	<div class="header__top">
+		<div class="out">
+			<nav>
+				<ul class="header__menu">
+					<li><a href="#">Схема заказа</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="currency">
+				<a href="#">usd</a>
+				<a href="#">pyc</a>
+			</div>
+			<div class="header__contakt">
+				<a href="callto:+86(991)3632032" class="header__tel">+86 (991) 363 20 32</a>
+				<p>10:00-20:00 Пн-Вс</p>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="out">
+			<a href="/" class="header__logo">
+				<h1>asiato китайский поставщик</h1>
+				<img src="img/logo.png" alt="asiato">
+			</a>
+			<div class="header__search">
+				<p>Поиск среди 800 000 товаров</p>
+				<div class="select js-select">
+					<span class="select__text js-select-text"></span>
+					<input type="hidden" class="js-select-input" value="">
+					<ul class="select__list js-select-list">
+						<li data-id="0">Все категории</li>
+						<li data-id="1">Детям</li>
+						<li data-id="2">Дядям</li>
+					</ul>
+				</div>
+
+				<button class="icon-lupa"></button>
+			</div>
+			<div class="header__corner">
+				<div class="header__corner_wish">
+					<a href="#" class="my__wish">
+						<img src="img/icon-heart.png" alt="Иллюстрация">
+						<span>0</span>
+					</a>
+					<a href="#" class="my__bay">
+						<img src="img/icon-basket.png" alt="Иллюстрация">
+						<span>12</span>
+					</a>
+				</div>
+				<div class="header__corner_enter">
+					<a href="#">Вход</a>
+					<a href="#">Регистрация</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
 <div class="out">
-	<i class="icon-sepa"></i>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus, quod eum rerum molestiae consectetur inventore autem nisi mollitia sit at dolore quam aliquam ipsum. Hic, consequatur obcaecati facere. Consectetur.
+	<div class="empty" style="margin-top: 44px;">
+		<aside class="aside">
+			<div class="aside__head">
+				<p>Категории</p>
+				<span>все</span>
+			</div>
+			<ul class="alist">
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-tv"></i>
+						электроника
+					</a>
+					<div class="alist__sub">
+						<ul class="blist">
+							<li class="blist__item">
+								<h4>Заголовок невидимка</h4>
+							</li>
+							<li class="blist__item">
+								<a href="#">Наушники</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Колонки</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Карты памяти</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Аккумуляторы</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Сумки для электроники</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Цифровые кабели</a>
+							</li>
+						</ul>
+						<ul class="blist">
+							<li class="blist__item">
+								<h4>Заголовок невидимка</h4>
+							</li>
+							<li class="blist__item">
+								<a href="#">Наушники</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Колонки</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Карты памяти</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Аккумуляторы</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Сумки для электроники</a>
+							</li>
+							<li class="blist__item">
+								<a href="#">Цифровые кабели</a>
+							</li>
+						</ul>
+		
+						<a href="#" class="alist__view">
+							<div class="alist__view_text">
+								<h3 class="title__yellow">Товар дня</h3>
+								<p>Lorem ipsum dolor sit amet.</p>
+								<s>$80</s>
+								<strong>$79</strong>
+							</div>
+							<img src="img/alist.jpg" alt="Иллюстрация">
+						</a>
+					</div>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-close"></i>
+						одежда
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-shoe"></i>
+						обувь
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-child"></i>
+						детский мир
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-auto"></i>
+						авто и мото
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-acses"></i>
+						украшения и часы
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-cult"></i>
+						культура
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-bag"></i>
+						сумки и аксесуары
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-sport"></i>
+						спортивные товары
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-health"></i>
+						красота и здоровье
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-tea"></i>
+						чайная церемония
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-home"></i>
+						все для дома и офиса
+					</a>
+				</li>
+				<li class="alist__item">
+					<a href="#" class="alist__item_link">
+						<i class="icon-teh"></i>
+						техника
+					</a>
+				</li>
+			</ul>
+		</aside>
+		<main class="small__container" >
+			<div class="bigest">
+				<img src="img/big1.jpg" alt="Иллюстрация">
+				<div class="bigest__ower">
+					<p>Lorem ipsum.</p>
+					<h2 class="title__big">Детские угги</h2>
+					<button class="btn__transparent">Посмотреть</button>
+				</div>
+			</div>
+
+			<section class="section">
+				<h3 class="title__section">Популярные товары</h3>
+			</section>
+
+			<!-- begin empty  -->
+			<div class="empty">
+				<div class="prod__hs">
+					<a href="#" class="icon__heart"></a>
+					<div class="prod__hs_img">
+						<img src="img/pic01.jpg" alt="Иллюстрация">
+					</div>
+					<div class="prod__hs_text">
+						<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+						<div class="prod__price">
+							<s>$80</s>
+							<strong>$65</strong>
+						</div>
+					</div>
+					<div class="stars">
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+					</div>
+				</div>
+				<div class="prod__hs_transparent">
+					<div class="prod__hss">
+						<div class="prod__hss_text">
+							<a href="#">Lorem ipsum dolor sit.</a>
+							<div class="prod__price">
+								<s>$80</s>
+								<strong>$65</strong>
+							</div>
+						</div>
+						<div class="prod__hss_img">
+							<img src="img/pic02.jpg" alt="Иллюстрация">
+						</div>
+					</div>
+					<div class="prod__hss">
+						<div class="prod__hss_text">
+							<a href="#">Lorem ipsum dolor sit.</a>
+							<div class="prod__price">
+								<s>$80</s>
+								<strong>$65</strong>
+							</div>
+						</div>
+						<div class="prod__hss_img">
+							<img src="img/pic03.jpg" alt="Иллюстрация">
+						</div>
+					</div>
+				</div>
+				<div class="prod__hs">
+					<a href="#" class="icon__heart"></a>
+					<div class="prod__hs_img">
+						<img src="img/pic01.jpg" alt="Иллюстрация">
+					</div>
+					<div class="prod__hs_text">
+						<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+						<div class="prod__price">
+							<s>$80</s>
+							<strong>$65</strong>
+						</div>
+					</div>
+					<div class="stars">
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+					</div>
+				</div>
+			</div><!-- end empty -->
+		</main>
+	</div> <!-- empty -->
+	<div class="empty">
+		<section class="section">
+			<h3 class="title__section">Популярные товары</h3>
+			<div class="section__btn">
+				<button class="btn__slider_prew js-slider__back"></button>
+				<button class="btn__slider_next js-slider__next"></button>
+			</div>
+		</section>
+
+		<div class="slider__delivery">
+			<div class="slider__item" >
+				<a href="#" class="icon__heart"></a>
+				<div class="slider__item_m">
+					<div class="slider__item_img">
+						<img src="img/pic05.jpg" alt="Иллюстрация">
+					</div>
+					<div class="prod__hs_text">
+						<a href="#">Lorem ipsum dolor sit amet, consectetur.</a>
+						<div class="prod__price">
+							<s>$80</s>
+							<strong>$65</strong>
+						</div>
+					</div>
+					<div class="stars">
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+						<span class="star">
+							<span class="star_l active"></span>
+							<span class="star_r active"></span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<a href="#" class="icon__heart"></a>
+				<div class="slider__item_x">
+					<div class="big__slide_left">
+						<div class="big__slide_text">
+							<h3 class="title__free">Бесплатная доставка</h3>
+							<a href="#">
+								Lorem ipsum dolor sit amet, consectetur.
+							</a>
+						</div>
+						<a href="#" class="bay">
+							<div class="bay__price">
+								<div class="center">
+									<s>$100</s>
+									<strong>$75</strong>
+								</div>
+							</div>
+							<span class="bay__img">
+								<i class="icon__bay"></i>
+							</span>
+						</a>
+					</div>
+					<div class="big__slide_img">
+						<img src="img/pic06.jpg" alt="Иллюстрация">
+					</div>
+				</div>
+			</div>
+			<div class="slider__item" >
+				<div class="slider__item_transparent">
+					<div class="prod__hss">
+						<div class="prod__hss_text">
+							<a href="#">Lorem ipsum dolor sit.</a>
+							<div class="prod__price">
+								<s>$80</s>
+								<strong>$65</strong>
+							</div>
+						</div>
+						<div class="prod__hss_img">
+							<img src="img/pic02.jpg" alt="Иллюстрация">
+						</div>
+					</div>
+					<div class="prod__hss">
+						<div class="prod__hss_text">
+							<a href="#">Lorem ipsum dolor sit.</a>
+							<div class="prod__price">
+								<s>$80</s>
+								<strong>$65</strong>
+							</div>
+						</div>
+						<div class="prod__hss_img">
+							<img src="img/pic03.jpg" alt="Иллюстрация">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider__item">
+				<div class="slider__item_transparent">
+					<div class="prod__hss">
+						<div class="prod__hss_text">
+							<a href="#">Lorem ipsum dolor sit.</a>
+							<div class="prod__price">
+								<s>$80</s>
+								<strong>$65</strong>
+							</div>
+						</div>
+						<div class="prod__hss_img">
+							<img src="img/pic02.jpg" alt="Иллюстрация">
+						</div>
+					</div>
+					<div class="prod__hss">
+						<div class="prod__hss_text">
+							<a href="#">Lorem ipsum dolor sit.</a>
+							<div class="prod__price">
+								<s>$80</s>
+								<strong>$65</strong>
+							</div>
+						</div>
+						<div class="prod__hss_img">
+							<img src="img/pic03.jpg" alt="Иллюстрация">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- empty -->
+	<div class="clear"></div>
+	<footer class="footer">
+		<div class="footer__top">
+			<a href="#">
+				<img src="img/wm.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/jam.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/visa.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/rbk.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/vi.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/mc.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/cp.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/tal.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/jd.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/gm.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/ja.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/mai.jpg" alt="Иллюстрация">
+			</a>
+			<a href="#">
+				<img src="img/ram.jpg" alt="Иллюстрация">
+			</a>
+		</div>
+	
+		<div class="footer__main">
+			<div class="footer__box">
+				<a href="/" class="footer__logo">
+					<img src="img/footer__logo.png" alt="Иллюстрация">
+				</a>
+			</div>
+			<div class="footer__box">
+					<h3>Инструкция </h3>
+					<ul class="footer__list">
+						<li><a href="#">Выбор товара</a></li>
+						<li><a href="#">Как заказать</a></li>
+						<li><a href="#">Условия поставки</a></li>
+						<li><a href="#">Как оплатить</a></li>
+						<li><a href="#">Описание доставки </a></li>
+					</ul>
+			</div>
+			<div class="footer__box">
+					<h3>Личный кабинет</h3>
+					<ul class="footer__list">
+						<li><a href="#">Процедура регистрации</a></li>
+						<li><a href="#">Баллы</a></li>
+						<li><a href="#">VIP аккаунт</a></li>
+						<li><a href="#">Купоны</a></li>
+						<li><a href="#">Пополнение счета </a></li>
+					</ul>
+			</div>
+			<div class="footer__box">
+					<h3>Asiatao</h3>
+					<ul class="footer__list">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Наши преимущества</a></li>
+						<li><a href="#">Возврат денег</a></li>
+						<li><a href="#">Пользовательское соглашение </a></li>
+					</ul>
+			</div>
+		</div>
+	
+		<div class="footer__bottom">
+			<p  class="copy"> © 2014-2015 asiatao.com - китайский интернет-магазин Таобао/Ta jnaknsdnjanjknjknjkas asdasda sd </p>
+			<a href="mailto:info@asiatao.com" class="dev_mail">info@asiatao.com</a>
+			<div class="footer__socio">
+				<a href="#" class="socio__f"></a>
+				<a href="#" class="socio__vk"></a>
+				<a href="#" class="socio__tw"></a>
+				<a href="#" class="socio__g"></a>
+				<a href="#" class="socio__ok"></a>
+			</div>
+		</div>
+	</footer>
 </div>
 <!-- END out-->
 </body>
