@@ -80,6 +80,34 @@ $(document).ready(function() {
 		nextArrow: $('.js-slider__next')
 	});
 
+	//slider comment
+	$('.slider__comment').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		// speed: 600,
+		// centerMode: true,
+		adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 20000,
+		prevArrow: $('.js-comment__back'),
+		nextArrow: $('.js-comment__next')
+	});
+
+	//slider half
+	$('.slider__half').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		// speed: 600,
+		// centerMode: true,
+		adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 20000,
+		dots: true
+	});
+
 
 
 }); //document ready
