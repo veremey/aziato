@@ -4,7 +4,9 @@
 	display: table
 .center
 	+vcenter
-
+.pole
+	clear: both
+	height: 30px
 .box__ms
 	width: 270px
 	padding-top: 1px
@@ -16,6 +18,17 @@
 	width: calc(100% - 295px)
 	padding-top: 1px
 	background-color: #FFF
+	+clr
+.box__l
+	position: relative
+	width: 65.5%
+	float: left
+	overflow: hidden
+	+clr
+.box__s
+	position: relative
+	width: 31%
+	float: right
 	+clr
 .section
 	background-color: #FFF
