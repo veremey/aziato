@@ -89,9 +89,23 @@ $(document).ready(function() {
 		// centerMode: true,
 		adaptiveHeight: true,
 		autoplay: true,
-		autoplaySpeed: 20000,
+		autoplaySpeed: 18000,
 		prevArrow: $('.js-comment__back'),
 		nextArrow: $('.js-comment__next')
+	});
+
+	//slider comment
+	$('.slider__report').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		// speed: 600,
+		// centerMode: true,
+		// adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 21000,
+		prevArrow: $('.js-report__back'),
+		nextArrow: $('.js-report__next')
 	});
 
 	//slider half
@@ -100,11 +114,9 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
-		// speed: 600,
-		// centerMode: true,
 		adaptiveHeight: true,
 		autoplay: true,
-		autoplaySpeed: 20000,
+		autoplaySpeed: 15000,
 		dots: true
 	});
 
