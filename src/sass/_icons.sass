@@ -1,4 +1,4 @@
-@each $s in icon-lupa,bird,icon-f,icon-vk,icon-tw,icon-g,icon-ok,icon-tv,icon__bay
+@each $s in icon-lupa,bird,icon-f,icon-vk,icon-tw,icon-g,icon-ok,icon-tv,icon__bay,icon-arrowbutton
 	.#{$s}
 		display: inline-block
 		+s(#{$s})
@@ -23,6 +23,10 @@
 	&:hover
 		+gray
 
-
+.icon-arrowbutton
+	position: absolute
+	bottom: 20px
+	left: 50%
+	margin-left: -5px
 
 	// ,icon-close,icon-shoe,icon-child,icon-auto,icon-acses,icon-cult,icon-bag,icon-sport,icon-health,icon-tea,icon-home,icon-teh

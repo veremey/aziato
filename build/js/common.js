@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+	//
+	$('.my__buy').on('click', function() {
+		$(this).toggleClass('is_active');
+		return false;
+	});
+
+
 	// check select
 	function select() {
 		$(".js-select").each(function(){
