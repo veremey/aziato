@@ -1,10 +1,18 @@
 .categories
+	position: relative
 	+clr
 	.box__ms
+		position: relative
+		z-index: 400
 		padding: 45px 20px 50px
-		z-index: 500
-		&:last-child
+		margin-bottom: 25px
+		&:nth-child(3n)
 			margin-right: 0
+		&:hover
+			.categories__outline
+				display: block
+			.categories__text
+				display: block
 	&__img
 		text-align: center
 		height: 130px
@@ -19,10 +27,28 @@
 		margin: 20px 0 30px
 		text-align: center
 	&__outline
+		display: none
 		position: absolute
 		top: 0
 		left: -35%
-		height: 100%
 		width: 175%
 		background-color: #fff
 		z-index: -1
+		box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+	&__text
+		position: relative
+		width: 270px
+		margin: 0 auto
+		padding: 300px 0 0
+		display: none
+	&__list
+		font-size: 0
+		padding-bottom: 30px
+		a
+			display: inline-block
+			font-size: 14px
+			color: $black
+			margin-bottom: 5px
+			+lr
+			&:hover
+				color: $red

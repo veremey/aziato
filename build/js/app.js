@@ -79,6 +79,23 @@ $(document).ready(function() {
 	    event.stopPropagation();
 	});
 
+	//увеличиваю z-index когда мышь над main.small__container
+	$('main.small__container').hover(function() {
+		$(this).css({'z-index' : '600'});
+	}, function() {
+		$(this).css({'z-index' : '6'});
+	});
+
+	//увеличиваю z-index когда мышь над main.small__container
+	$('.categories .box__ms').hover(function() {
+		$(this).css({'z-index' : '600'});
+		$(this).siblings().css({'z-index' : '-2'});
+
+	}, function() {
+		$(this).css({'z-index' : '6'});
+		$(this).siblings().css({'z-index' : '6'});
+	});
+
 
 	/* Скрипт для рейтинга */
 
