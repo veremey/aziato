@@ -1,0 +1,50 @@
+.card
+	display: table
+	width: 100%
+	table-layout: fixed
+	background-color: #FFF
+	&__item
+		display: table-cell
+		border-right: 1px solid $body
+		padding: 30px 25px
+	h5
+		margin-bottom: 20px
+		text-transform: uppercase
+		font-size: 12px
+		color: $gray
+		+lr
+	a
+		font-size: 15px
+		color: $black
+		line-height: 1
+		+lr
+		+tr(.3s)
+		&:hover
+			text-decoration: underline
+			color: $red
+	.main__tel
+		+lbl
+
+
+.data
+	margin-top: 25px
+	+clr
+	&__item
+		float: left
+		width: 32%
+		height: 305px
+		background-color: #FFF
+		margin-right: 2%
+		padding: 35px 50px 35px 35px
+		&:last-child
+			margin-right: 0
+		h5
+			font-size: 16px
+			color: $black
+			margin-bottom: 15px
+			+lbl
+		p,
+		a
+			color: $gray
+		a:hover
+			text-decoration: underline
