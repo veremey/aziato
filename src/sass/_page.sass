@@ -27,9 +27,11 @@
 			padding: 15px 0 15px
 			&_item
 				display: inline-block
-				margin-left: 15px
+				margin-left: 5px
 				width: 50px
 				height: 50px
+				&:nth-child(5n+1)
+					margin-left: 10px
 				img
 					width: 100%
 					height: 100%
@@ -184,8 +186,6 @@
 		top: 10px
 		left: 20px
 
-
-
 .product__buy_price
 	float: left
 	s
@@ -266,6 +266,9 @@
 .seller__name
 	display: block
 	margin-bottom: 10px
+	color: $black
+	&:hover
+		color: $red
 
 .orginal_page_img
 	float: left
@@ -275,3 +278,106 @@
 .orginal_page
 	width: 80%
 	vertical-align: top
+
+.surprice
+	margin-top: 25px
+	+clr
+	&__item
+		position: relative
+		float: left
+		width: 25%
+		height: 125px
+		background-color: #FFF
+		border-right: 1px solid $body
+		text-align: center
+		&:last-child
+			border-right: 1px solid #fff
+		&_wrap
+			+vcenter
+			width: 80%
+		h3
+			font-size: 14px
+			color: $black
+			text-align: center
+			margin-bottom: 10px
+			+lb
+		p
+			color: $gray
+
+// ************** detail  *******
+
+.detail
+	margin-top: 25px
+	background-color: #FFF
+	+clr
+	&__tab
+		&_item
+			// width: 33%
+			display: inline-block
+			height: 78px
+			border-top: 1px solid #fff
+			padding: 0 35px
+			+tr(.3s)
+			&.is_active
+				border-top-color: $red
+			&:hover
+				border-top-color: $gray
+				h3
+					color: $red
+		h3
+			font-size: 18px
+			line-height: 78px
+			color: $black
+			+lb
+	&__text
+		border-top: 1px solid $body
+		border-bottom: 1px solid $body
+		+clr
+		&_list
+			padding-top: 25px
+			width: 50%
+			&.get__left
+				border-right: 1px solid $body
+		p
+			font-size: 14px
+			margin-bottom: 25px
+			+clr
+			span
+				float: left
+				text-align: right
+				width: 30%
+				padding-left: 40px
+				color: $gray
+			strong
+				float: right
+				width: 67%
+				+lb
+	&__img
+		width: 50%
+		&.get__left
+			padding: 35px 10px 35px 45px
+		&.get__right
+			padding: 35px 45px 35px 10px
+		&:hover
+			.detail__img_over
+				visibility: visible
+				opacity: 1
+		&_wrap
+			position: relative
+			img
+				width: 100%
+				height: 100%
+				max-width: 100%
+				max-height: 100%
+				vertical-align: top
+		&_over
+			visibility: hidden
+			opacity: 0
+			+tr(.5s)
+			+coverdiv
+			background-color: rgba(205, 19, 80, .5)
+			a
+				+vcenter
+				img
+					-webkit-border-radius: 100%
+					border-radius: 100%
