@@ -429,19 +429,60 @@
 					color: #FFF
 					margin-left: 15px
 					+lb
+		&_bottom
+			padding: 55px 0
+			background-color: #FFF
+			+clr
 		&_rate
+			width: calc(100% - 290px)
+			float: left
 			+clr
 			&_item
 				height: 100%
 				padding-top: 35px
 				float: left
-				width: 20%
-				padding-left: 40px
+				width: 23%
+				padding-left: 30px
+				+box
 				h6
 					font-size: 14px
-					margin-bottom: 5px
+					margin-bottom: 10px
 					+lr
 				.stars
 					float: left
 
+
+
+
+// *******  feadback   *******
+
+
+.feadback
+	+clr
+.feadback__user
+	// width: 16%
+	width: 20%
+	float: left
+	text-align: right
+	padding-top: 15px
+	+clr
+	p
+		float: right
+		color: $gray
+		font-size: 14px
+		+lr
+	strong
+		+lb
+.feadback__text
+	position: relative
+	width: 75%
+	float: right
+	border: 1px solid $body
+	padding: 25px 50px 25px 35px
+	&:before
+		content: ""
+		position: absolute
+		top: 20px
+		left: -20px
+		+s(icon-feadback)
 
