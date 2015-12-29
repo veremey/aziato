@@ -31,6 +31,14 @@
 	width: 31%
 	float: right
 	+clr
+.box__xs
+	position: relative
+	width: 23.3%
+	display: inline-block
+	margin-right: 2%
+	+clr
+	&:nth-child(4n)
+		margin-right: 0
 // .box__sm  //face - cloth
 // 	position: relative
 // 	width: 14.5%
@@ -43,9 +51,18 @@
 	height: 60px
 	padding: 0 25px
 	margin: 25px 0
-	&__btn
+	&__btn,
+	&__right
 		float: right
 		margin-top: 20px
+		a
+			font-size: 14px
+			color: $red
+			+lr
+			+tr(.3s)
+			&:hover
+				color: black
+
 
 .empty
 	+clr
@@ -97,6 +114,28 @@
 	.star_r.active
 		background: url(../img/star_a.png) 100% 0 no-repeat
 
+.breadcrumbs
+	height: 51px
+	padding-top: 20px
+	a
+		display: inline-block
+		position: relative
+		font-size: 14px
+		color: $black
+		margin-right: 20px
+		+lr
+		&:hover
+			color: $red
+		&:after
+			content: ""
+			position: absolute
+			top: 8px
+			right: -13px
+			+arr(4, 5, $red, r)
+	.is_active
+		color: $gray
+		&:after
+			content: none
 
 .bay
 	display: block

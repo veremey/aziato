@@ -1,0 +1,277 @@
+.product
+	position: relative
+	width: 83%
+	float: left
+	margin-right: 2%
+	padding-bottom: 35px
+	background-color: #FFF
+	+clr
+	&__img
+		float: left
+		width: 300px
+		margin-right: 25px
+		background-color: #FFF
+		+clr
+		&_big
+			position: relative
+			top: auto
+			text-align: center
+			width: 100%
+			height: 310px
+			+clr
+			img
+				+vcenter
+				max-width: 100%
+				max-height: 100%
+		&_preview
+			padding: 15px 0 15px
+			&_item
+				display: inline-block
+				margin-left: 15px
+				width: 50px
+				height: 50px
+				img
+					width: 100%
+					height: 100%
+	&__label
+		position: absolute
+		top: 20px
+		left: 20px
+		padding: 3px 6px
+		background-color: $red
+		color: #FFF
+		text-transform: uppercase
+		font-size: 11px
+		+lb
+	&__text
+		width: calc(100% - 325px)
+		float: left
+		+clr
+	.title__category
+		font-weight: 400
+	&__favorite
+		height: 40px
+		margin-bottom: 10px
+		+clr
+		.stars
+			float: left
+			bottom: -10px
+		.icon__heart
+			float: right
+			top: 10px
+			right: 10px
+	&__option
+		margin: 20px 0 0
+		padding-bottom: 25px
+		+clr
+
+.option__size
+	float: left
+	margin-right: 65px
+.option__wrap
+	margin-top: 10px
+	.option__size_item
+		float: left
+		width: 30px
+		height: 30px
+		margin-right: 5px
+		border: 1px solid $body
+		-webkit-border-radius: 5px
+		border-radius: 5px
+		line-height: 30px
+		text-align: center
+		text-transform: uppercase
+		font-size: 12px
+		color: $black
+		+lr
+		&:hover
+			color: $red
+	.is_active
+		border-color: $red
+		background-color: $red
+		color: #FFF
+		&:hover
+			cursor: default
+			color: #FFF
+	.is_disable
+		color: $body
+		&:hover
+			cursor: default
+			color: $body
+.option__color
+	float: left
+	margin-right: 45px
+	.option__color_item
+		position: relative
+		display: inline-block
+		height: 30px
+		width: 30px
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		margin-right: 7px
+		&.is_active
+			&:after
+				content: ""
+				position: absolute
+				bottom: -13px
+				left: 50%
+				margin-left: -6px
+				+arr(8, 6, $red, t)
+
+.option__sum
+	float: left
+.option__sum_wrap
+	position: relative
+	width: 85px
+	height: 30px
+	margin-top: 10px
+	border: 1px solid $body
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	padding: 5px
+	+clr
+	.icon-minus
+		float: left
+		color: $red
+		font-size: 18px
+		margin-left: 5px
+		+lb
+	.icon-plus
+		float: right
+		color: $red
+		font-size: 18px
+		margin-right: 5px
+		+lb
+	span
+		+vcenter
+		color: $black
+		+lr
+
+.product__buy
+	padding: 26px 0
+	border-top: 1px solid $body
+	border-bottom: 1px solid $body
+	+clr
+	.btn__red
+		float: left
+		margin: 0 10px 0 25px
+		position: relative
+		padding: 0 26px
+		span
+			line-height: 45px
+			padding-left: 30px
+		.icon-basket
+			position: absolute
+			top: 8px
+			left: 25px
+	.btn__transparent
+		position: relative
+		float: left
+		color: $black
+		border: 1px solid $gray
+		&:hover
+			background-color: $red
+			border-color: $n
+			span
+				color: #FFF
+			.icon-check
+				+s(icon-checkh)
+		span
+			line-height: 45px
+			padding-left: 30px
+	.icon-check
+		position: absolute
+		top: 10px
+		left: 20px
+
+
+
+.product__buy_price
+	float: left
+	s
+		color: $gray
+		font-size: 27px
+		text-transform: uppercase
+		+lbl
+		margin-right: 20px
+	strong
+		font-size: 27px
+		text-transform: uppercase
+		color: $black
+		+lbl
+
+.product__delivery
+	float: left
+	margin: 20px 0 30px
+.delivery__post
+	float: left
+	margin-right: 20px
+	margin-top: 10px
+	strong
+		color: $black
+		+lb
+	.select
+		width: 200px
+		margin: 1px 20px 0 10px
+		&__text
+			height: 18px
+			line-height: 1
+			padding: 0
+			border: 0
+			background-color: $n
+			-webkit-border-radius: 0
+			border-radius: 0
+			color: $red
+			border-bottom: 1px dotted $red
+			&:before
+				+arr(7, 5, $black, b)
+				top: 2px
+				right: 10px
+				background-image: none
+		&__list
+			top: 18px
+			li
+				line-height: 20px
+				padding: 0
+
+.box__seller
+	float: right
+	width: 15%
+	background-color: #FFF
+	padding: 20px 20px 0
+	border-bottom: 1px solid $body
+	+clr
+	&_wrap
+		padding: 0px 0 30px
+		text-align: center
+		.title__category
+			font-size: 17px
+			margin: 10px 0
+		.btn__transparent
+			border: 1px solid $body
+			color: $black
+			text-transform: none
+			&:hover
+				background-color: $red
+				color: #FFF
+				border: 1px solid $n
+.seller__info
+	margin-top: 20px
+	strong
+		margin-top: 10px
+		+lb
+	img
+		margin-top: 10px
+
+.seller__name
+	display: block
+	margin-bottom: 10px
+
+.orginal_page_img
+	float: left
+	vertical-align: top
+	margin-right: 10px
+	margin-bottom: 30px
+.orginal_page
+	width: 80%
+	vertical-align: top

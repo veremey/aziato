@@ -96,6 +96,27 @@ $(document).ready(function() {
 		$(this).siblings().css({'z-index' : '6'});
 	});
 
+	// подмена картинки
+
+	$('.js-take-img').click( function() {
+		var src = $('.is_active').attr('src');
+		var carousel = $(this).parents('.product__img');
+
+		$(this).siblings().removeClass('is_active');
+		$(this).addClass('is_active');
+		carousel.find('.js-swing__img img').attr('src', carousel.find('.is_active img').attr('src'));
+	});
+
+	//option choose
+	$('.js-option a:not(.is_disable)').on('click', function() {
+		$(this).addClass('is_active').siblings().removeClass('is_active');
+
+		return false;
+	});
+
+	$('.js-option .is_disable').on('click', function() {
+		return false;
+	});
 
 	/* Скрипт для рейтинга */
 
