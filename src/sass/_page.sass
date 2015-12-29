@@ -311,15 +311,19 @@
 	background-color: #FFF
 	+clr
 	&__tab
+		position: relative
 		&_item
 			// width: 33%
 			display: inline-block
+			vertical-align: top
 			height: 78px
 			border-top: 1px solid #fff
-			padding: 0 35px
+			padding: 0 25px
 			+tr(.3s)
 			&.is_active
 				border-top-color: $red
+				.btn__transparent
+					visibility: visible
 			&:hover
 				border-top-color: $gray
 				h3
@@ -329,6 +333,19 @@
 			line-height: 78px
 			color: $black
 			+lb
+		.btn__transparent
+			position: absolute
+			top: 17px
+			right: 30px
+			vertical-align: top
+			visibility: hidden
+			color: $black
+			border: 1px solid $body
+			&:hover
+				background-color: $red
+				color: #FFF
+	&__charactristics
+		+clr
 	&__text
 		border-top: 1px solid $body
 		border-bottom: 1px solid $body
@@ -381,3 +398,50 @@
 				img
 					-webkit-border-radius: 100%
 					border-radius: 100%
+	&__comment
+		+clr
+		&_top
+			height: 105px
+			border-top: 1px solid $body
+			border-bottom: 1px solid $body
+			+clr
+			&_total
+				float: left
+				width: 290px
+				border-right: 1px solid $body
+				padding: 35px 35px 29px
+				h5
+					display: inline-block
+					font-size: 18px
+					color: $black
+					text-transform: uppercase
+					+lb
+				span
+					display: inline-block
+					width: 40px
+					height: 40px
+					text-align: center
+					line-height: 40px
+					background-color: $red
+					-webkit-border-radius: 100%
+					border-radius: 100%
+					font-size: 18px
+					color: #FFF
+					margin-left: 15px
+					+lb
+		&_rate
+			+clr
+			&_item
+				height: 100%
+				padding-top: 35px
+				float: left
+				width: 20%
+				padding-left: 40px
+				h6
+					font-size: 14px
+					margin-bottom: 5px
+					+lr
+				.stars
+					float: left
+
+

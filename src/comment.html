@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Page</title>
+	<title>Comment</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" media="all" href="css/style.css" >
@@ -11,99 +11,7 @@
 </head>
 <body>
 <!-- BEGIN  out-->
-<header class="header">
-	<div class="header__top">
-		<div class="out">
-			<nav>
-				<ul class="header__menu">
-					<li><a href="#">Схема заказа</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Оплата</a></li>
-					<li><a href="#">Помощь</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="currency">
-				<a href="#">usd</a>
-				<a href="#">pyc</a>
-			</div>
-			<div class="header__contakt">
-				<a href="callto:+86(991)3632032" class="header__tel">+86 (991) 363 20 32</a>
-				<p>10:00-20:00 Пн-Вс</p>
-			</div>
-		</div>
-	</div>
-	<div class="header__bottom">
-		<div class="out">
-			<a href="/" class="header__logo">
-				<h1>asiato китайский поставщик</h1>
-				<img src="img/logo.png" alt="asiato">
-			</a>
-			<div class="header__search">
-				<p>Поиск среди 800 000 товаров</p>
-				<div class="select js-select">
-					<span class="select__text js-select-text"></span>
-					<input type="hidden" class="js-select-input" value="">
-					<ul class="select__list js-select-list">
-						<li data-id="0">Все категории</li>
-						<li data-id="1">Детям</li>
-						<li data-id="2">Дядям</li>
-					</ul>
-				</div>
-
-				<button class="icon-lupa"></button>
-			</div>
-			<div class="header__corner">
-				<div class="header__corner_wish">
-					<a href="#" class="my__wish">
-						<img src="img/icon-heart.png" alt="Иллюстрация">
-						<span>0</span>
-					</a>
-					<div class="my__buy">
-						<a href="#" class="my__buy_link">
-							<img class="my__buy_icon" src="img/icon-basket.png" alt="Иллюстрация">
-							<span>12</span>
-						</a>
-						<div class="my__buy_wrap">
-							<div class="my__buy_item">
-								<div class="my__buy_item_img">
-									<img src="img/pic04.jpg" alt="Иллюстрация">
-								</div>
-								<div class="my__buy_item_text">
-									<a href="#" class="my__buy_item_text_center">
-										Женские эластичные спортивные леггинсы
-									</a>
-										<strong>$50</strong>
-								</div>
-							</div>
-							<div class="my__buy_item">
-								<div class="my__buy_item_img">
-									<img src="img/pic04.jpg" alt="Иллюстрация">
-								</div>
-								<div class="my__buy_item_text">
-									<a href="#" class="my__buy_item_text_center">
-										Женские эластичные спортивные леггинсы
-									</a>
-										<strong>$50</strong>
-								</div>
-							</div>
-							<div class="my__buy_item_price">
-								<p>Итого <strong>$133</strong></p>
-								<div class="clear"></div>
-								<button class="btn__red">оформить заказ</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="header__corner_enter">
-					<a href="#">Вход</a>
-					<a href="#">Регистрация</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
+//=include partials/header.html
 
 <div class="out">
 	<div class="empty">
@@ -308,55 +216,57 @@
 
 	<div class="detail">
 		<div class="detail__tab">
-			<a href="#" class="detail__tab_item is_active">
+			<a href="#" class="detail__tab_item">
 				<h3>Характеристики и фотографии товара</h3>
 			</a>
 			<a href="#" class="detail__tab_item">
 				<h3>Подробная информация товара</h3>
 			</a>
-			<a href="#" class="detail__tab_item">
+			<a href="#" class="detail__tab_item is_active">
 				<h3>Отзывы покупателей</h3>
 				<button class="btn__transparent">Оставить отзыв</button>
 			</a>
 		</div>
-		<div class="detail__charactristics">
-			<div class="detail__text">
-				<div class="detail__text_list get__left">
-					<p><span>Бренд: </span><strong>класс</strong></p>
-					<p><span>Толщина: </span><strong>класс</strong></p>
-					<p><span>Стиль: </span><strong>класс</strong></p>
-					<p><span>Рукав: </span><strong>класс</strong></p>
-					<p><span>Воротник: </span><strong>класс</strong></p>
+		<div class="detail__comment">
+			<div class="detail__comment_top">
+				<div class="detail__comment_top_total">
+					<h5>Всего отЗывов</h5>
+					<span>36</span>
 				</div>
-				<div class="detail__text_list get__right">
-					<p><span>Бренд: </span><strong>класс</strong></p>
-					<p><span>Толщина: </span><strong>класс</strong></p>
-					<p><span>Стиль: </span><strong>класс</strong></p>
-					<p><span>Рукав: </span><strong>класс</strong></p>
-					<p><span>Воротник: </span><strong>класс</strong></p>
-				</div>
-			</div>
-			<div class="detail__img get__left">
-				<div class="detail__img_wrap">
-					<img src="img/img01.jpg" alt="Иллюстрация">
-					<div class="detail__img_over">
-						<a href="#">
-							<img src="img/scale.jpg" alt="Иллюстрация">
-						</a>
+				<div class="detail__comment_rate">
+					<div class="detail__comment_rate_item">
+						<h6>Средний рейтинг: <span>4.3</span> </h6>
+						<div class="stars">
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+							<span class="star">
+								<span class="star_l active"></span>
+								<span class="star_r active"></span>
+							</span>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="detail__img get__right">
-				<div class="detail__img_wrap">
-					<img src="img/img02.jpg" alt="Иллюстрация">
-					<div class="detail__img_over">
-						<a href="#">
-							<img src="img/scale.jpg" alt="Иллюстрация">
-						</a>
+					<div class="detail__comment_rate_item">
+						<h6>Средний рейтинг: <span>4.3</span> </h6>
+						<div class="status__plus"></div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="empty">
@@ -431,99 +341,7 @@
 
 	</div><!-- empty -->
 	<div class="clear"></div>
-	<footer class="footer">
-		<div class="footer__top">
-			<a href="#">
-				<img src="img/wm.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/jam.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/visa.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/rbk.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/vi.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/mc.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/cp.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/tal.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/jd.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/gm.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/ja.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/mai.jpg" alt="Иллюстрация">
-			</a>
-			<a href="#">
-				<img src="img/ram.jpg" alt="Иллюстрация">
-			</a>
-		</div>
-	
-		<div class="footer__main">
-			<div class="footer__box">
-				<a href="/" class="footer__logo">
-					<img src="img/footer__logo.png" alt="Иллюстрация">
-				</a>
-			</div>
-			<div class="footer__box">
-					<h3>Инструкция </h3>
-					<ul class="footer__list">
-						<li><a href="#">Выбор товара</a></li>
-						<li><a href="#">Как заказать</a></li>
-						<li><a href="#">Условия поставки</a></li>
-						<li><a href="#">Как оплатить</a></li>
-						<li><a href="#">Описание доставки </a></li>
-					</ul>
-			</div>
-			<div class="footer__box">
-					<h3>Личный кабинет</h3>
-					<ul class="footer__list">
-						<li><a href="#">Процедура регистрации</a></li>
-						<li><a href="#">Баллы</a></li>
-						<li><a href="#">VIP аккаунт</a></li>
-						<li><a href="#">Купоны</a></li>
-						<li><a href="#">Пополнение счета </a></li>
-					</ul>
-			</div>
-			<div class="footer__box">
-					<h3>Asiatao</h3>
-					<ul class="footer__list">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Контакты</a></li>
-						<li><a href="#">Наши преимущества</a></li>
-						<li><a href="#">Возврат денег</a></li>
-						<li><a href="#">Пользовательское соглашение </a></li>
-					</ul>
-			</div>
-		</div>
-	
-		<div class="footer__bottom">
-			<p  class="copy"> © 2014-2015 asiatao.com - китайский интернет-магазин Таобао/Ta jnaknsdnjanjknjknjkas asdasda sd </p>
-			<a href="mailto:info@asiatao.com" class="dev_mail">info@asiatao.com</a>
-			<div class="footer__socio">
-				<a href="#" class="socio__f"></a>
-				<a href="#" class="socio__vk"></a>
-				<a href="#" class="socio__tw"></a>
-				<a href="#" class="socio__g"></a>
-				<a href="#" class="socio__ok"></a>
-			</div>
-		</div>
-	</footer>
+	//=include partials/footer.html
 </div>
 <!-- END out-->
 </body>
