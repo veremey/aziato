@@ -6,6 +6,8 @@
 		float: left
 		font-size: 0
 		+justify
+		+r(940)
+			width: 430px
 		li
 			display: inline-block
 		a
@@ -22,6 +24,11 @@
 		width: 23%
 		float: right
 		margin-top: 25px
+		+r(1140)
+			width: 254px
+		+r(850)
+			width: 150px
+			margin-top: 13px
 		a
 			float: left
 			font-size: 14px
@@ -59,11 +66,19 @@
 		border: 1px solid $body
 		-webkit-border-radius: 5px
 		border-radius: 5px
+		+r(1130)
+			margin-left: 5%
+		+r(1040)
+			width: 300px
+		+r(800)
+			margin-left: 15px
 		input
 			float: left
 			width: 60%
 			padding-left: 20px
 			line-height: 38px
+			+r(1040)
+				width: 157px
 			+placeholder
 				font-size: 14px
 				color: $black
@@ -72,6 +87,8 @@
 	.select
 		margin-right: 0
 		margin-top: -1px
+		+r(1040)
+			width: 140px
 
 
 
@@ -80,6 +97,11 @@
 	width: 130px
 	float: left
 	margin-left: 11%
+	+r(980)
+		margin-left: 40px
+	+r(900)
+		margin-left: 20px
+		width: 103px
 	a
 		position: relative
 		float: left
@@ -89,6 +111,8 @@
 		font-size: 13px
 		color: $black
 		+lbl
+		+r(900)
+			margin-right: 25px
 		&:hover
 			color: $red
 		&:after
@@ -167,11 +191,20 @@
 	float: right
 	width: 25%
 	margin-top: 25px
+	+r(1040)
+		width: 250px
+	+r(800)
+		width: 230px
 	&_wish
 		position: relative
 		float: left
 		width: 40%
 		height: 50px
+		+r(1140)
+			width: 110px
+		+r(800)
+			width: 87px
+
 	&_enter
 		position: relative
 		float: right
@@ -183,6 +216,8 @@
 			color: $black
 			+lb
 			+tr(.3s)
+			+r(800)
+				margin-right: 6px
 			&:last-child
 				margin-right: 0
 			&:hover
@@ -198,6 +233,10 @@
 	border-radius: 100%
 	margin-right: 15px
 	z-index: 1
+	+r(800)
+		width: 35px
+		height: 35px
+		margin: 8px 8px 0 0
 	&:last-child
 		margin-right: 0
 	&:hover
