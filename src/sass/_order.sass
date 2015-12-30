@@ -1,0 +1,91 @@
+.order
+	background-color: #FFF
+	padding: 40px 0
+	+clr
+	p
+		color: $black
+		font-size: 14px
+		text-align: right
+		width: 240px
+		padding-left: 40px
+		line-height: 46px
+		float: left
+		+box
+
+.order__name
+	width: 650px
+	float: left
+	height: 47px
+	vertical-align: top
+	margin-bottom: 5px
+	input
+		width: 380px
+		height: 46px
+		border: 1px solid $body
+		padding: 0 15px
+		float: right
+		-webkit-border-radius: 6px
+		border-radius: 6px
+		+box
+.order__country
+	width: 515px
+	float: left
+	height: 47px
+	vertical-align: top
+	margin-bottom: 5px
+	.select
+		width: 244px
+		margin: 0
+		&__text
+			background-color: #FFF
+		&__list
+			border: 1px solid $body
+			border-top: none
+.order__adress,
+.order__adress_plus
+	width: 583px
+	float: left
+	height: 47px
+	vertical-align: top
+	margin-bottom: 5px
+	input
+		width: 313px
+		height: 46px
+		border: 1px solid $body
+		padding: 0 15px
+		float: right
+		-webkit-border-radius: 6px
+		border-radius: 6px
+		+box
+.order__btn
+	border-top: 1px solid $body
+	margin-top: 50px
+	padding-top: 25px
+	.btn__transparent
+		float: left
+		margin-left: 25px
+		position: relative
+		width: 225px
+		color: $black
+		border-color: $body
+		+tr(.3s)
+		&:hover
+			background-color: $red
+			color: #FFF
+	.btn__red
+		float: right
+		margin-right: 25px
+		position: relative
+		width: 225px
+		&:hover
+			span
+				color: $black
+		span
+			float: left
+			margin-left: 30px
+			+tr(.3s)
+		.icon-get-right
+			float: right
+			margin-right: 20px
+			margin-top: 7px
+

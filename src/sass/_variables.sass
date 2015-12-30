@@ -89,6 +89,35 @@
 			line-height: 40px
 			font-size: 16px
 			+lbl
+	.steps
+		display: inline-block
+		height: 60px
+		margin-left: 30px
+		vertical-align: top
+		a
+			display: inline-block
+			position: relative
+			padding: 25px
+			line-height: 15px
+			color: $black
+			+lr
+			&:hover
+				color: $red
+			&:after
+				content: ""
+				position: absolute
+				top: 30px
+				right: -1px
+				+arr(4, 5, $red, r)
+			&:last-child::after
+				content: none
+			&.is_active
+				border-top: 2px solid $red
+				line-height: 14px
+				+lb
+
+
+
 
 
 .empty
@@ -106,7 +135,6 @@
 		font-size: 14px
 		color: $black
 		+lbl
-
 .stars
 	position: relative
 	float: right
