@@ -2,8 +2,16 @@
 	clear: both
 	height: 0
 	display: table
+.show768
+	display: none
+	+r(768)
+		display: block
 .center
 	+vcenter
+.height__center
+	position: absolute
+	top: 50%
+	+try(-50%)
 .pole
 	clear: both
 	height: 30px
@@ -62,6 +70,25 @@
 			+tr(.3s)
 			&:hover
 				color: black
+	.goods
+		display: inline-block
+		width: 135px
+		vertical-align: top
+		margin: 10px 0 0 30px
+		strong
+			display: inline-block
+			width: 40px
+			height: 40px
+			margin-right: 10px
+			border: 1px solid $body
+			-webkit-border-radius: 100%
+			border-radius: 100%
+			background-color: #FFF
+			color: $black
+			text-align: center
+			line-height: 40px
+			font-size: 16px
+			+lbl
 
 
 .empty

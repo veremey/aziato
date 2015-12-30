@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Contact</title>
+	<title>Basket</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link rel="stylesheet" media="all" href="css/style.css" >
@@ -109,71 +109,157 @@
 	<div class="empty">
 		<div class="breadcrumbs">
 			<a href="#">Главная</a>
-			<a href="#" class="is_active">Контакты</a>
+			<a href="#" class="is_active">Корзина</a>
 		</div>
 		<section class="section" style="margin-top: 0;">
-			<h3 class="title__section">Контакты</h3>
+			<h3 class="title__section">Ваша корзина</h3>
+			<div class="goods">
+				<strong>2</strong>
+				<span>товара</span>
+			</div>
 		</section>
 
-		<ul class="card">
-			<li class="card__item">
-				<h5>Телефон</h5>
-				<a href="callto:+869913630032" class="main__tel">+86 991 3630032</a>
-			</li>
-			<li class="card__item">
-				<h5>Эл. почта</h5>
-				<a href="mailto:info@asiatao.com">info@asiatao.com</a>,
-				<a href="mailto:service@asiatao.com">service@asiatao.com</a>,
-				<a href="mailto:asiatao@yandex.com">asiatao@yandex.com</a>
-			</li>
-			<li class="card__item">
-				<h5>skype</h5>
-				<a href="callto:asiato.com">asiato.com</a>
-				<a href="callto:www.asiato.com">www.asiato.com</a>
-			</li>
-			<li class="card__item">
-				<h5>icq</h5>
-				<a href="#">489445122</a>
-			</li>
-			<li class="card__item">
-				<h5>mail.ru</h5>
-				<a href="mailto:asiatao@mail.ru<">asiatao@mail.ru</a>
-			</li>
-			<li class="card__item">
-				<h5>viber и whatsapp</h5>
-				<a href="callto:+869913630032" class="main__tel">+86 991 3630032</a>
-			</li>
-		</ul>
-
-		<div class="data">
-			<div class="data__item">
-				<h5>Юридическое лицо</h5>
-				<p>Научно-техническая Веб-компания с ограниченной ответственностью «Азиятао» в Урумчи</p>
-				<br>
-				<p>Urumqi Asiatao Network Technology Co.,Ltd</p>
-				<br>
-				<p>乌鲁木齐亚淘网络科技有限公司</p>
+		<div class="basket">
+			<div class="basket__header">
+				<div class="basket__good">
+					<h3>товар</h3>
+				</div>
+				<div class="basket__wrap">
+					<div class="basket__size">
+						<h3>Размер</h3>
+					</div>
+					<div class="basket__color">
+						<h3>Цвет</h3>
+					</div>
+					<div class="basket__sum">
+						<h3>количество</h3>
+					</div>
+					<div class="basket__prise">
+						<h3>Цена</h3>
+					</div>
+					<div class="basket__del">
+						<h3>Удалить</h3>
+					</div>
+				</div>
 			</div>
-			<div class="data__item">
-				<h5>Юридический адрес</h5>
-				<p>830011, Китай, г. Урумчи, ул. Пекинская 558, офис 310 </p>
-				<br>
-				<p>Room 310, Building 558, Beijing Road, Urumqi, China 830011</p>
-				<br>
-				<p>国乌鲁木齐市北京路558号310室，邮编830011</p>
+			<div class="basket__item">
+				<div class="basket__good">
+					<a href="#" class="basket__good_img">
+						<img src="img/pic02.jpg" alt="Иллюстрация">
+					</a>
+					<div class="basket__good_text">
+						<p>В весенний и осенний корейский значительно тоньше плюс slim кашемир утолщение градиент хлопчатобумажной рубашки с длинными рукавами минимума Джокер джинсовая рубашка - прилив</p>
+					</div>
+				</div>
+				<div class="basket__wrap">
+					<div class="basket__size">
+						<div class="height__center">
+							<a href="#" class="option__size_item">l</a>
+						</div>
+					</div>
+					<div class="basket__color">
+						<div class="height__center">
+							<a href="#" class="option__color_item" style="background-color: #28272d;"></a>
+						</div>
+					</div>
+					<div class="basket__sum">
+						<div class="height__center">
+							<div class="option__sum_wrap">
+								<button class="icon-minus">-</button>
+								<span>1</span>
+								<button class="icon-plus">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="basket__prise">
+						<div class="height__center">
+							<strong>$237</strong>
+						</div>
+					</div>
+					<div class="basket__del">
+						<div class="height__center">
+							<button class="icon-del js-basket-del"></button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="data__item">
-				<h5>Банковские реквизиты</h5>
-				<p>Beneficiary's Bank: China Merchants Bank, H.O.,CMB TOWER,7088 SHENNAN BOULEVARD, Shenzhen, China</p>
-				<br>
-				<p>WIFT Code: CMBCCNBS</p>
-				<br>
-				<p>Beneficiary's name: Urumqi Asiatao Network Technology Co.,Ltd</p>
-				<br>
-				<p>Beneficiary's A/C No.: 991903656532801 </p>
-
+			<div class="basket__header show768">
+				<div class="basket__good">
+					<h3>товар</h3>
+				</div>
+				<div class="basket__wrap">
+					<div class="basket__size">
+						<h3>Размер</h3>
+					</div>
+					<div class="basket__color">
+						<h3>Цвет</h3>
+					</div>
+					<div class="basket__sum">
+						<h3>количество</h3>
+					</div>
+					<div class="basket__prise">
+						<h3>Цена</h3>
+					</div>
+					<div class="basket__del">
+						<h3>Удалить</h3>
+					</div>
+				</div>
+			</div>
+			<div class="basket__item">
+				<div class="basket__good">
+					<a href="#" class="basket__good_img">
+						<img src="img/pic02.jpg" alt="Иллюстрация">
+					</a>
+					<div class="basket__good_text">
+						<p>В весенний и осенний корейский значительно тоньше плюс slim кашемир утолщение градиент хлопчатобумажной рубашки с длинными рукавами минимума Джокер джинсовая рубашка - прилив</p>
+					</div>
+				</div>
+				<div class="basket__wrap">
+					<div class="basket__size">
+						<div class="height__center">
+							<a href="#" class="option__size_item">l</a>
+						</div>
+					</div>
+					<div class="basket__color">
+						<div class="height__center">
+							<a href="#" class="option__color_item" style="background-color: #28272d;"></a>
+						</div>
+					</div>
+					<div class="basket__sum">
+						<div class="height__center">
+							<div class="option__sum_wrap">
+								<button class="icon-minus">-</button>
+								<span>1</span>
+								<button class="icon-plus">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="basket__prise">
+						<div class="height__center">
+							<strong>$237</strong>
+						</div>
+					</div>
+					<div class="basket__del">
+						<div class="height__center">
+							<button class="icon-del js-basket-del"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="basket__buy">
+				<button class="btn__transparent">Продолжить покупки</button>
+				<div class="basket__price">
+					<div class="basket__price_item">
+						<span>итого</span>
+						<strong>$392</strong>
+					</div>
+					<button class="btn__red">оформить заказ</button>
+				</div>
 			</div>
 		</div>
+
+
+
 
 	</div> <!-- empty -->
 

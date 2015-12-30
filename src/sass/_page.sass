@@ -72,22 +72,7 @@
 	margin-right: 65px
 .option__wrap
 	margin-top: 10px
-	.option__size_item
-		float: left
-		width: 30px
-		height: 30px
-		margin-right: 5px
-		border: 1px solid $body
-		-webkit-border-radius: 5px
-		border-radius: 5px
-		line-height: 30px
-		text-align: center
-		text-transform: uppercase
-		font-size: 12px
-		color: $black
-		+lr
-		&:hover
-			color: $red
+
 	.is_active
 		border-color: $red
 		background-color: $red
@@ -100,25 +85,41 @@
 		&:hover
 			cursor: default
 			color: $body
+.option__size_item
+	float: left
+	width: 30px
+	height: 30px
+	margin-right: 5px
+	border: 1px solid $body
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	line-height: 30px
+	text-align: center
+	text-transform: uppercase
+	font-size: 12px
+	color: $black
+	+lr
+	&:hover
+		color: $red
 .option__color
 	float: left
 	margin-right: 45px
-	.option__color_item
-		position: relative
-		display: inline-block
-		height: 30px
-		width: 30px
-		-webkit-border-radius: 100%
-		border-radius: 100%
-		margin-right: 7px
-		&.is_active
-			&:after
-				content: ""
-				position: absolute
-				bottom: -13px
-				left: 50%
-				margin-left: -6px
-				+arr(8, 6, $red, t)
+.option__color_item
+	position: relative
+	display: inline-block
+	height: 30px
+	width: 30px
+	-webkit-border-radius: 100%
+	border-radius: 100%
+	margin-right: 7px
+	&.is_active
+		&:after
+			content: ""
+			position: absolute
+			bottom: -13px
+			left: 50%
+			margin-left: -6px
+			+arr(8, 6, $red, t)
 
 .option__sum
 	float: left

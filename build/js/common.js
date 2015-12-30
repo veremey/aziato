@@ -111,6 +111,11 @@ $(document).ready(function() {
 
 	});
 
+	//удаляю элемент с корзины
+	$('.js-basket-del').on('click', function() {
+		$(this).closest('.basket__item').hide();
+	});
+
 	//slider delivery
 	$('.slider__delivery').slick({
 		infinite: true,

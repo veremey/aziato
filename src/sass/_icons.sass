@@ -1,4 +1,4 @@
-@each $s in icon-lupa,bird,icon-f,icon-vk,icon-tw,icon-g,icon-ok,icon-tv,icon__bay,icon-arrowbutton,icon-close,icon-shoe,icon-child,icon-auto,icon-acses,icon-cult,icon-bag,icon-sport,icon-health,icon-tea,icon-home,icon-teh,icon-basket,icon-check,icon-feadback
+@each $s in icon-lupa,bird,icon-f,icon-vk,icon-tw,icon-g,icon-ok,icon-tv,icon__bay,icon-arrowbutton,icon-close,icon-shoe,icon-child,icon-auto,icon-acses,icon-cult,icon-bag,icon-sport,icon-health,icon-tea,icon-home,icon-teh,icon-basket,icon-check,icon-feadback,icon-del
 	.#{$s}
 		display: inline-block
 		+s(#{$s})
@@ -33,3 +33,8 @@
 
 .icon-plus
 	background-color: $n
+.icon-del
+	background-color: $n
+	+tr(.3s)
+	&:hover
+		+gray
