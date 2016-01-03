@@ -33,18 +33,33 @@ myCV:  [google drive](https://drive.google.com/open?id=1TK9mt61RCe0p68Jt_lBX8pRn
 
 ## Как это использовать
 
-Почитать как это готовить можно [тут](http://habrahabr.ru/post/250569/ "Readme")
+Для начала установить [Gulp](http://gulpjs.com/) глобально.
 
-Для начала установить [Bower](http://bower.io/) и [Gulp](http://gulpjs.com/) глобально.
+Установить локально gulp выполнив:
 
-Установить локально gulp и bower выполнив следующие команды:
-
-1. *npm install gulp*
-
-2. *npm install bower*
+ *npm install gulp*
 
 Установить плагины
 
-1. *npm install*
+ *npm install*
 
-2. *bower install*
+
+## Странички для просмотра:
+
+* [index.html](http://veremey.github.io/aziato/build/)
+
+* [Корзина](http://veremey.github.io/aziato/build/basket.html)
+
+* [Категории](http://veremey.github.io/aziato/build/category.html)
+
+* [Вещи](http://veremey.github.io/aziato/build/cloth.html)
+
+* [Комментарии](http://veremey.github.io/aziato/build/comment.html)
+
+* [Контакты](http://veremey.github.io/aziato/build/contact.html)
+
+* [Оформление заказа](http://veremey.github.io/aziato/build/order.html)
+
+* [Страница товара](http://veremey.github.io/aziato/build/page.html)
+
+
