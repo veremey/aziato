@@ -29,6 +29,8 @@
 	+clr
 	+r(1200)
 		margin-right: 3%
+	+r(765)
+		width: 100%
 	&:last-child
 		margin-right: 0
 		float: right
@@ -36,6 +38,8 @@
 		@extend .prod__hs
 		background-color: $n
 		padding-bottom: 0
+		+r(765)
+			margin: 25px 0
 	&_img
 		text-align: center
 		padding: 25px 10px 15px
@@ -76,6 +80,9 @@
 			vertical-align: middle
 			max-height: 145px
 			margin: 0 auto
+			+r(765)
+				height: 160px
+				max-height: 160px
 .comment
 	&__user
 		padding: 35px 25px 0
@@ -149,6 +156,9 @@
 	width: 100%
 	height: 95px
 	margin: 25px 0
+	+clr
+	+r(790)
+		height: auto
 	&__item
 		position: relative
 		height: 95px
@@ -158,6 +168,10 @@
 		font-size: 14px
 		position: relative
 		background-color: #cd1350
+		+r(790)
+			width: 100%
+			height: 105px
+			float: none
 		&:hover
 			.delivery__subitem
 				height: auto
@@ -171,10 +185,19 @@
 			top: 0
 			bottom: 0
 			left: 91%
+			+r(790)
+				content: none
+			// 	left: 0
+			// 	top: auto
+			// 	background-size: contain
 		&:nth-of-type(1)
 			&:after
 				width: 23px
 				background-image: url("../img/deliv1.jpg")
+				// +r(790)
+				// 	width: 100%
+				// 	height: 18px
+				// 	background-image: url("../img/deliv1_s.jpg")
 		&:nth-of-type(2)
 			background-color: #df1234
 			&:after
@@ -198,6 +221,8 @@
 			width: 80%
 			top: 50%
 			transform: translateY(-50%)
+			+r(910)
+				left: 10%
 .delivery__subitem
 	position: absolute
 	height: 0
@@ -208,6 +233,9 @@
 	padding: 30px 30px 50px
 	background-color: $red
 	+tr(.3s)
+	+r(790)
+		width: 100%
+		left: 0
 	span
 		font-size: 14px
 		color: #FFF

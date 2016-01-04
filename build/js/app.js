@@ -177,7 +177,21 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 18000,
 		prevArrow: $('.js-comment__back'),
-		nextArrow: $('.js-comment__next')
+		nextArrow: $('.js-comment__next'),
+		responsive: [
+			{
+				breakpoint: 940,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			]
 	});
 
 	//slider comment

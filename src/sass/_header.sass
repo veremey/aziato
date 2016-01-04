@@ -1,6 +1,10 @@
 .header
 	// height: 65px
 	+clr
+	&__top
+		+clr
+		+r(765)
+			height: 40px
 	&__menu
 		width: 48%
 		float: left
@@ -8,6 +12,8 @@
 		+justify
 		+r(940)
 			width: 430px
+		+r(765)
+			display: none
 		li
 			display: inline-block
 		a
@@ -29,6 +35,8 @@
 		+r(850)
 			width: 150px
 			margin-top: 13px
+		+r(765)
+			display: none
 		a
 			float: left
 			font-size: 14px
@@ -41,14 +49,23 @@
 		p
 			font-size: 14px
 			color: $gray
+	&__menu_little
+		display: none
+		+r(765)
+			display: block
+			float: right
+			position: relative
+			width: 100px
 	&__bottom
 		background-color: #FFF
-		height: 105px
+		// height: 105px //+r(765)
 	&__logo
 		float: left
 		margin-top: 25px
 		position: relative
 		z-index: 1
+		+r(479)
+			margin-top: 20px
 		h1
 			+hidetext
 		img
@@ -56,6 +73,8 @@
 			max-height: 100%
 			max-width: 100%
 			vertical-align: middle
+			+r(479)
+				width: 130px
 	&__search
 		float: left
 		position: relative
@@ -72,6 +91,8 @@
 			width: 300px
 		+r(800)
 			margin-left: 15px
+		+r(765)
+			display: none
 		input
 			float: left
 			width: 60%
@@ -113,6 +134,8 @@
 		+lbl
 		+r(900)
 			margin-right: 25px
+		+r(765)
+			margin-top: 15px
 		&:hover
 			color: $red
 		&:after
@@ -195,6 +218,11 @@
 		width: 250px
 	+r(800)
 		width: 230px
+	+r(765)
+		width: 270px
+	+r(479)
+		width: 130px
+		margin-top: 8px
 	&_wish
 		position: relative
 		float: left
@@ -204,11 +232,12 @@
 			width: 110px
 		+r(800)
 			width: 87px
-
 	&_enter
 		position: relative
 		float: right
 		z-index: 1
+		+r(479)
+			display: none
 		a
 			line-height: 50px
 			font-size: 14px
@@ -222,6 +251,24 @@
 				margin-right: 0
 			&:hover
 				color: $red
+	+ .select
+		display: none
+		clear: both
+		margin-top: 15px
+		margin-bottom: 15px
+		width: 100% !important
+		+r(765)
+			display: block
+			z-index: 400
+		.select__text
+			+lbl
+			&:before
+				background-image: none
+				+arr(7, 4, $gray, b)
+		.select__list
+			background-color: #F6F6F7
+			li
+				+lb
 
 .my__buy_link,
 .my__wish

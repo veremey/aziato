@@ -3,6 +3,56 @@ button
 	&:hover
 		cursor: pointer
 .btn
+	&__butter
+		display: block
+		position: relative
+		padding: 1px
+		margin-top: 10px
+		+clr
+		&:hover
+			.btn__butter_list li
+				&:first-child
+					position: absolute
+					top: 5px
+					+rotate(45)
+				&:last-child
+					position: absolute
+					top: 5px
+					+rotate(-45)
+				&:nth-child(2)
+					opacity: 0
+		&_list
+			position: relative
+			float: left
+			width: 18px
+			margin-right: 10px
+			vertical-align: top
+			+tr(.25s)
+			li
+				height: 2px
+				background-color: #000
+				width: 100%
+				margin-bottom: 3px
+				+tr(.5s)
+		span
+			vertical-align: top
+			line-height: 10px
+			font-size: 14px
+			color: $black
+			+lr
+	&__search_small
+		display: none
+		float: left
+		margin-top: 8px
+		width: 35px
+		height: 35px
+		background-color: #CD1350
+		-webkit-border-radius: 100%
+		border-radius: 100%
+		&:hover
+			opacity: 0.7
+		+r(765)
+			display: block
 	&__transparent
 		height: 45px
 		padding: 0 30px
@@ -35,6 +85,8 @@ button
 	background-color: $n
 	margin-right: 5px
 	+tr(.3s)
+	+r(768)
+		margin: 0
 	&:hover
 		cursor: pointer
 		+gray

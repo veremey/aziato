@@ -6,6 +6,15 @@
 	background-color: #FFF
 	z-index: 300
 	+clr
+	+r(1040)
+		min-width: 235px
+		margin-right: 15px
+		+ .small__container
+			width: calc(100% - 250px)
+	+r(765)
+		display: none
+		+ .small__container
+			width: 100%
 	&__head
 		height: 45px
 		padding: 0 25px
@@ -45,12 +54,18 @@
 			box-shadow: 0 -1px 3px rgba(0, 0, 0, .3) inset
 			&::after
 				right: 15px
+				+r(1040)
+					opacity: 0
 			.alist__item_link
 				color: $red
 				padding-left: 60px
+				+r(1040)
+					padding-left: 40px
 				i
 					+gray-zero
 					left: 30px
+					+r(1040)
+						left: 15px
 			.alist__sub
 				display: block
 		&.more
@@ -74,12 +89,17 @@
 			color: #333
 			+lbl
 			+tr(.3s)
+			+r(1040)
+				font-size: 13px
+				padding-left: 35px
 			i
 				position: absolute
 				top: 20px
 				left: 25px
 				+gray
 				+tr(.3s)
+				+r(1040)
+					left: 10px
 
 .alist__view
 	width: 40%

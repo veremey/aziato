@@ -23,12 +23,20 @@
 	background-color: #FFF
 	margin-right: 25px
 	+clr
+	+r(640)
+		width: 100%
+		margin-right: 0
+		margin-bottom: 25px
 .box__xl
 	// width: 74%
 	width: calc(100% - 295px)
 	padding-top: 1px
 	background-color: #FFF
 	+clr
+	+r(640)
+		width: 100%
+		margin-right: 0
+		margin-bottom: 25px
 .box__l
 	position: relative
 	width: 65.5%
@@ -60,6 +68,15 @@
 	height: 60px
 	padding: 0 25px
 	margin: 25px 0
+	+r(768)
+		height: auto
+		min-height: 65px
+		padding: 0 10px 0 25px
+	.title__section
+		max-width: 80%
+		+r(768)
+			line-height: 1.2
+			margin: 10px 0
 	&__btn,
 	&__right
 		float: right
@@ -71,6 +88,10 @@
 			+tr(.3s)
 			&:hover
 				color: black
+	&__btn
+		+r(768)
+			width: 35px
+			margin-top: 3px
 	.goods
 		display: inline-block
 		width: 135px
@@ -116,10 +137,6 @@
 				border-top: 2px solid $red
 				line-height: 14px
 				+lb
-
-
-
-
 
 .empty
 	+clr
@@ -228,6 +245,10 @@
 .box__half
 	width: 49%
 	+clr
+	+r(765)
+		width: 100%
+		+ .box__half
+			margin-top: 25px
 .get__left
 	float: left
 .get__right
@@ -242,6 +263,9 @@
 	margin: 40px 55px 45px 45px
 	p
 		color: $gray
+	.title__section
+		line-height: 1.2
+		margin-bottom: 15px
 
 .status__plus
 	height: 5px
