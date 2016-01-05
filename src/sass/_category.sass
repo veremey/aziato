@@ -1,13 +1,28 @@
 .categories
 	position: relative
 	+clr
+	+r(765)
+		display: none
 	.box__ms
 		position: relative
 		z-index: 400
 		padding: 45px 20px 50px
 		margin-bottom: 25px
+		+r(1210)
+			width: 240px
+		+r(1080)
+			width: 200px
+		+r(940)
+			width: 270px
+		+r(850)
+			width: 45%
 		&:nth-child(3n)
 			margin-right: 0
+			+r(940)
+				margin-right: 25px
+		&:nth-child(2n)
+			+r(940)
+				margin-right: 0
 		&:hover
 			.categories__outline
 				display: block
@@ -37,7 +52,8 @@
 		box-shadow: 0 0 10px rgba(0, 0, 0, .5)
 	&__text
 		position: relative
-		width: 270px
+		// width: 270px//++
+		width: 65%
 		margin: 0 auto
 		padding: 300px 0 0
 		display: none

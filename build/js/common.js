@@ -113,7 +113,7 @@ $(document).ready(function() {
 
 	//удаляю элемент с корзины
 	$('.js-basket-del').on('click', function() {
-		$(this).closest('.basket__item').hide();
+		$(this).closest('.js-basket-close').hide();
 	});
 
 	//slider delivery
