@@ -23,15 +23,24 @@
 			+lr
 			+r(840)
 				display: none
+				line-height: 35px
+	.get__right
+		.basket__header
+			+r(840)
+				display: block
 	&__header,
 	&__item
 		width: 100%
 		float: left
 		vertical-align: top
 		position: relative
+	&__header
+		border-bottom: 1px solid $body
+		+r(840)
+			display: none
 	&__item
-		// padding: 20px 0 25px 20px
-		border-top: 1px solid $body
+		padding: 20px 0 25px 20px
+		// border-top: 1px solid $body
 		.height__center
 			+vcenter
 		&_img
@@ -61,9 +70,6 @@
 				right: 20px
 				+r(840)
 					display: block
-	&__header
-		+r(840)
-			display: none
 	&__size,
 	&__color,
 	&__sum,
@@ -77,6 +83,7 @@
 		+r(840)
 			width: 25%
 			padding-left: 10px
+			min-height: 10px
 		h3
 			+r(840)
 				display: block
@@ -91,20 +98,53 @@
 		background-color: #FFF
 		border-top: 1px solid $body
 		+clr
+		+r(840)
+			background-color: $n
+			text-align: center
+		&_small
+			display: none
+			+r(840)
+				display: block
+				text-align: center
+				margin-top: 20px
+			p
+				font-size: 14px
+				color: $black
+				+lr
+			.btn__transparent
+				+r(840)
+					display: block !important
+					border-color: $gray
+					float: none
+					margin: 20px auto 0
+
+
 	.btn__transparent
 		float: left
 		border-color: $body
 		color: $black
 		+tr(.3s)
+		+r(840)
+			display: none
+			// border-color: $gray
+			// float: none
+			// margin-bottom: 10px
 		&:hover
 			background-color: $red
 			color: #FFF
 	&__price
 		float: right
 		width: 380px
+		+r(840)
+			width: 100%
+			text-align: center
 		&_item
 			float: left
 			vertical-align: top
+			+r(840)
+				width: 100%
+				float: none
+				text-align: center
 			span
 				display: inline-block
 				vertical-align: top
@@ -124,3 +164,6 @@
 		width: 225px
 		float: right
 		vertical-align: top
+		+r(840)
+			float: none
+			margin-top: 15px

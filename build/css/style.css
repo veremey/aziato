@@ -150,6 +150,7 @@ a { text-decoration: none; }
 .header__search input:-ms-input-placeholder { font-size: 14px; color: #272c31; text-align: justify; font-family: "LatoRegular", Arial, sans-serif; }
 .header__search input::placeholder { font-size: 14px; color: #272c31; text-align: justify; font-family: "LatoRegular", Arial, sans-serif; }
 .header .select { margin-right: 0; margin-top: -1px; }
+.header .select__text { -webkit-border-radius: 0 5px 5px 0; border-radius: 0 5px 5px 0; }
 
 .currency { position: relative; width: 130px; float: left; margin-left: 11%; }
 .currency a { position: relative; float: left; margin-right: 35px; margin-top: 25px; text-transform: uppercase; font-size: 13px; color: #272c31; font-family: "LatoBlack", Arial, sans-serif; font-weight: 900; }
@@ -584,7 +585,8 @@ a { text-decoration: none; }
 .basket__good:after { content: " "; display: table; clear: both; }
 .basket__good h3 { line-height: 60px; color: #272c31; font-size: 12px; text-transform: uppercase; text-align: center; font-family: "LatoRegular", Arial, sans-serif; }
 .basket__header, .basket__item { width: 100%; float: left; vertical-align: top; position: relative; }
-.basket__item { border-top: 1px solid #edeff1; }
+.basket__header { border-bottom: 1px solid #edeff1; }
+.basket__item { padding: 20px 0 25px 20px; }
 .basket__item .height__center { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .basket__item_img { height: 70px; float: left; width: 70px; vertical-align: top; width: 100px; }
 .basket__item_img img { height: 100%; max-width: 100%; width: auto; margin: 0 auto; max-height: 70px; }
@@ -594,6 +596,8 @@ a { text-decoration: none; }
 .basket .option__sum_wrap { margin-top: 0; }
 .basket__buy { padding: 25px; background-color: #FFF; border-top: 1px solid #edeff1; *zoom: 1; }
 .basket__buy:after { content: " "; display: table; clear: both; }
+.basket__buy_small { display: none; }
+.basket__buy_small p { font-size: 14px; color: #272c31; font-family: "LatoRegular", Arial, sans-serif; }
 .basket .btn__transparent { float: left; border-color: #edeff1; color: #272c31; -webkit-transition: 0.3s; transition: 0.3s; }
 .basket .btn__transparent:hover { background-color: #cd1350; color: #FFF; }
 .basket__price { float: right; width: 380px; }
@@ -792,9 +796,11 @@ button:hover { cursor: pointer; }
 
 .box__l { position: relative; width: 65.5%; float: left; overflow: hidden; *zoom: 1; }
 .box__l:after { content: " "; display: table; clear: both; }
+.box__l .slider__item_x { width: 100%; }
 
 .box__s { position: relative; width: 31%; float: right; *zoom: 1; }
 .box__s:after { content: " "; display: table; clear: both; }
+.box__s .slider__item_transparent { width: 100%; height: auto; }
 
 .box__xs { position: relative; width: 23.3%; display: inline-block; margin-right: 2%; *zoom: 1; }
 .box__xs:after { content: " "; display: table; clear: both; }
@@ -922,13 +928,21 @@ button:hover { cursor: pointer; }
 @media only screen and (max-width: 840px){
  .basket__subject + .basket__subject{ margin-top: 25px; }
  .basket__good{ width: 100%; }
- .basket__good h3{ display: none; }
+ .basket__good h3{ display: none; line-height: 35px; }
+ .basket .get__right .basket__header{ display: block; }
+ .basket__header{ display: none; }
  .basket__item_text{ padding-right: 50px; }
  .basket__item_text .icon-del{ display: block; }
- .basket__header{ display: none; }
- .basket__size, .basket__color, .basket__sum, .basket__prise, .basket__del{ width: 25%; padding-left: 10px; }
+ .basket__size, .basket__color, .basket__sum, .basket__prise, .basket__del{ width: 25%; padding-left: 10px; min-height: 10px; }
  .basket__size h3, .basket__color h3, .basket__sum h3, .basket__prise h3, .basket__del h3{ display: block; }
- .basket__del{ display: none; } }
+ .basket__del{ display: none; }
+ .basket__buy{ background-color: transparent; text-align: center; }
+ .basket__buy_small{ display: block; text-align: center; margin-top: 20px; }
+ .basket__buy_small .btn__transparent{ display: block !important; border-color: #767c81; float: none; margin: 20px auto 0; }
+ .basket .btn__transparent{ display: none; }
+ .basket__price{ width: 100%; text-align: center; }
+ .basket__price_item{ width: 100%; float: none; text-align: center; }
+ .basket .btn__red{ float: none; margin-top: 15px; } }
 
 @media only screen and (max-width: 800px){
  .header__search{ margin-left: 15px; }
