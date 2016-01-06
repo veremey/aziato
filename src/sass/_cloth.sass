@@ -4,8 +4,11 @@
 	background-color: #FFF
 	vertical-align: top
 	+clr
+	+r(765)
+		width: 100%
+		margin-bottom: 25px
 	&.get__left
-		margin-right: 30px
+		margin-right: 2.4%
 	&.get__right
 		margin-left: 0px
 	h4
@@ -29,17 +32,29 @@
 			background-color: $red
 			color: #FFF
 
+.leaf
+	width: 66%
+	+r(765)
+		width: 100%
+
+
 .face
 	position: relative
 	background-color: #FFF
-	width: 14.5%
+	width: 22.3%
 	height: 180px
 	float: left
-	margin-right: 2.5%
+	margin-right: 3.5%
 	padding: 10px 20px
 	text-align: center
 	vertical-align: top
 	+clr
+	+r(1000)
+		width: 48%
+		margin-bottom: 25px
+		margin-right: 4%
+		&:nth-child(even)
+			margin-right: 0
 	&__img
 		position: relative
 		width: 100%

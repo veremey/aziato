@@ -379,13 +379,15 @@ a { text-decoration: none; }
 
 .demand { width: 31.6%; padding: 25px; background-color: #FFF; vertical-align: top; *zoom: 1; }
 .demand:after { content: " "; display: table; clear: both; }
-.demand.get__left { margin-right: 30px; }
+.demand.get__left { margin-right: 2.4%; }
 .demand.get__right { margin-left: 0px; }
 .demand h4 { font-size: 18px; margin-bottom: 20px; line-height: 1; color: #272c31; font-family: "LatoBlack", Arial, sans-serif; font-weight: 900; }
 .demand__link { display: inline-block; font-size: 14px; color: #272c31; font-family: "LatoRegular", Arial, sans-serif; padding: 3px 8px; border: 1px solid #edeff1; -webkit-border-radius: 25px; border-radius: 25px; margin-bottom: 3px; -webkit-transition: 0.3s; transition: 0.3s; }
 .demand__link:hover { background-color: #cd1350; color: #FFF; }
 
-.face { position: relative; background-color: #FFF; width: 14.5%; height: 180px; float: left; margin-right: 2.5%; padding: 10px 20px; text-align: center; vertical-align: top; *zoom: 1; }
+.leaf { width: 66%; }
+
+.face { position: relative; background-color: #FFF; width: 22.3%; height: 180px; float: left; margin-right: 3.5%; padding: 10px 20px; text-align: center; vertical-align: top; *zoom: 1; }
 .face:after { content: " "; display: table; clear: both; }
 .face__img { position: relative; width: 100%; margin-bottom: 5px; }
 .face__img_wrap { text-align: center; }
@@ -902,6 +904,10 @@ button:hover { cursor: pointer; }
  .alist__item_link{ font-size: 13px; padding-left: 35px; }
  .alist__item_link i{ left: 10px; } }
 
+@media only screen and (max-width: 1000px){
+ .face{ width: 48%; margin-bottom: 25px; margin-right: 4%; }
+ .face:nth-child(even){ margin-right: 0; } }
+
 @media only screen and (max-width: 985px){
  .footer__socio{ width: 145px; } }
 
@@ -981,6 +987,8 @@ button:hover { cursor: pointer; }
  .prod__hs, .prod__hs_transparent{ width: 100%; }
  .prod__hs_transparent{ margin: 25px 0; }
  .prod__hss_img img{ height: 160px; max-height: 160px; }
+ .demand{ width: 100%; margin-bottom: 25px; }
+ .leaf{ width: 100%; }
  .categories{ display: none; }
  .slider__item_m, .slider__item_transparent{ width: 97vw; }
  .slider__item_x{ width: 97vw; }
