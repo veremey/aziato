@@ -121,19 +121,25 @@
 		height: 60px
 		margin-left: 30px
 		vertical-align: top
+		+r(915)
+			margin-left: 15px
+		+r(830)
+			display: none
 		a
 			display: inline-block
 			position: relative
-			padding: 25px
+			padding: 22px
 			line-height: 15px
 			color: $black
 			+lr
+			+r(915)
+				padding: 22px 15px
 			&:hover
 				color: $red
 			&:after
 				content: ""
 				position: absolute
-				top: 30px
+				top: 27px
 				right: -1px
 				+arr(4, 5, $red, r)
 			&:last-child::after
@@ -286,3 +292,7 @@
 	height: 5px
 	width: 100%
 	+gh(#ea1b24 8.3%, #edeff1 8.4%)
+
+input
+	&:focus
+		border-color: $gray

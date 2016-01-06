@@ -11,6 +11,8 @@
 		line-height: 46px
 		float: left
 		+box
+		+r(710)
+			width: 40%
 
 .order__name
 	width: 650px
@@ -18,6 +20,10 @@
 	height: 47px
 	vertical-align: top
 	margin-bottom: 5px
+	+r(710)
+		width: 97%
+		margin: 5px auto 5px
+		float: none
 	input
 		width: 380px
 		height: 46px
@@ -27,15 +33,24 @@
 		-webkit-border-radius: 6px
 		border-radius: 6px
 		+box
+		+r(710)
+			width: 58%
 .order__country
 	width: 515px
 	float: left
 	height: 47px
 	vertical-align: top
 	margin-bottom: 5px
+	+r(710)
+		width: 97%
+		float: none
+		margin: 5px auto 5px
 	.select
 		width: 244px
 		margin: 0
+		+r(710)
+			float: left
+			margin-left: 2%
 		&__text
 			background-color: #FFF
 		&__list
@@ -48,6 +63,10 @@
 	height: 47px
 	vertical-align: top
 	margin-bottom: 5px
+	+r(710)
+		width: 97%
+		float: none
+		margin: 5px auto 5px
 	input
 		width: 313px
 		height: 46px
@@ -57,10 +76,18 @@
 		-webkit-border-radius: 6px
 		border-radius: 6px
 		+box
+		+r(710)
+			float: left
+			width: 40%
+			margin-left: 2%
 .order__btn
 	border-top: 1px solid $body
 	margin-top: 50px
 	padding-top: 25px
+	+clr
+	+r(710)
+		width: 97%
+		margin: 50px auto 0
 	.btn__transparent
 		float: left
 		margin-left: 25px
