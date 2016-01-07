@@ -2,6 +2,8 @@
 	background-color: #FFF
 	padding: 40px 0
 	+clr
+	+r(640)
+		padding: 30px 20px 30px
 	p
 		color: $black
 		font-size: 14px
@@ -13,6 +15,12 @@
 		+box
 		+r(710)
 			width: 40%
+		+r(640)
+			padding-left: 0
+			width: 100%
+			margin: 7px 0 5px
+			text-align: left
+			line-height: 1.2
 
 .order__name
 	width: 650px
@@ -20,10 +28,12 @@
 	height: 47px
 	vertical-align: top
 	margin-bottom: 5px
+	+clr
 	+r(710)
 		width: 97%
 		margin: 5px auto 5px
 		float: none
+		height: auto
 	input
 		width: 380px
 		height: 46px
@@ -35,6 +45,8 @@
 		+box
 		+r(710)
 			width: 58%
+		+r(640)
+			width: 100%
 .order__country
 	width: 515px
 	float: left
@@ -45,12 +57,16 @@
 		width: 97%
 		float: none
 		margin: 5px auto 5px
+		height: auto
 	.select
 		width: 244px
 		margin: 0
 		+r(710)
 			float: left
 			margin-left: 2%
+		+r(640)
+			width: 100%
+			margin: 0
 		&__text
 			background-color: #FFF
 		&__list
@@ -80,6 +96,9 @@
 			float: left
 			width: 40%
 			margin-left: 2%
+		+r(640)
+			width: 100%
+			margin: 0
 .order__btn
 	border-top: 1px solid $body
 	margin-top: 50px
@@ -107,12 +126,26 @@
 		&:hover
 			span
 				color: $black
+		+r(640)
+			width: 100%
+			margin: 0 0 10px
+			text-align: center
 		span
 			float: left
 			margin-left: 30px
 			+tr(.3s)
+			+r(640)
+				float: none
 		.icon-get-right
 			float: right
 			margin-right: 20px
 			margin-top: 7px
+	.basket__buy_small
+		p
+			width: 100%
+			margin: 10px 0
+			padding: 0
+			text-align: center
+		.btn__transparent
+			width: 100%
 

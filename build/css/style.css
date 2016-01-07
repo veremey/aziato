@@ -615,7 +615,8 @@ a { text-decoration: none; }
 .order:after { content: " "; display: table; clear: both; }
 .order p { color: #272c31; font-size: 14px; text-align: right; width: 240px; padding-left: 40px; line-height: 46px; float: left; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.order__name { width: 650px; float: left; height: 47px; vertical-align: top; margin-bottom: 5px; }
+.order__name { width: 650px; float: left; height: 47px; vertical-align: top; margin-bottom: 5px; *zoom: 1; }
+.order__name:after { content: " "; display: table; clear: both; }
 .order__name input { width: 380px; height: 46px; border: 1px solid #edeff1; padding: 0 15px; float: right; -webkit-border-radius: 6px; border-radius: 6px; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .order__country { width: 515px; float: left; height: 47px; vertical-align: top; margin-bottom: 5px; }
@@ -634,6 +635,8 @@ a { text-decoration: none; }
 .order__btn .btn__red:hover span { color: #272c31; }
 .order__btn .btn__red span { float: left; margin-left: 30px; -webkit-transition: 0.3s; transition: 0.3s; }
 .order__btn .btn__red .icon-get-right { float: right; margin-right: 20px; margin-top: 7px; }
+.order__btn .basket__buy_small p { width: 100%; margin: 10px 0; padding: 0; text-align: center; }
+.order__btn .basket__buy_small .btn__transparent { width: 100%; }
 
 .slider__delivery { background-color: #EDEFF1; *zoom: 1; }
 .slider__delivery:after { content: " "; display: table; clear: both; }
@@ -1015,9 +1018,9 @@ input:focus { border-color: #767c81; }
 
 @media only screen and (max-width: 710px){
  .order p{ width: 40%; }
- .order__name{ width: 97%; margin: 5px auto 5px; float: none; }
+ .order__name{ width: 97%; margin: 5px auto 5px; float: none; height: auto; }
  .order__name input{ width: 58%; }
- .order__country{ width: 97%; float: none; margin: 5px auto 5px; }
+ .order__country{ width: 97%; float: none; margin: 5px auto 5px; height: auto; }
  .order__country .select{ float: left; margin-left: 2%; }
  .order__adress, .order__adress_plus{ width: 97%; float: none; margin: 5px auto 5px; }
  .order__adress input, .order__adress_plus input{ float: left; width: 40%; margin-left: 2%; }
@@ -1034,7 +1037,15 @@ input:focus { border-color: #767c81; }
  .dev_mail{ display: none; }
  .footer__socio{ width: 100%; text-align: center; margin: 25px 0; }
  .footer__socio a{ margin-right: 10px; }
+ .order{ padding: 30px 20px 30px; }
+ .order p{ padding-left: 0; width: 100%; margin: 7px 0 5px; text-align: left; line-height: 1.2; }
+ .order__name input{ width: 100%; }
+ .order__country .select{ width: 100%; margin: 0; }
+ .order__adress input, .order__adress_plus input{ width: 100%; margin: 0; }
+ .order__btn .btn__red{ width: 100%; margin: 0 0 10px; text-align: center; }
+ .order__btn .btn__red span{ float: none; }
  .slider__comment_item{ margin-right: 0; }
+ .hide640{ display: none; }
  .box__ms{ width: 100%; margin-right: 0; margin-bottom: 25px; }
  .box__xl{ width: 100%; margin-right: 0; margin-bottom: 25px; } }
 
