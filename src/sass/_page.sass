@@ -61,12 +61,18 @@
 			width: 100%
 			float: none
 			padding: 20px
+		+r(640)
+			padding: 20px 0
 	.title__category
 		font-weight: 400
+		+r(700)
+			display: none
 	&__favorite
 		height: 40px
 		margin-bottom: 10px
 		+clr
+		+r(700)
+			display: none
 		.stars
 			float: left
 			bottom: -10px
@@ -190,11 +196,18 @@
 	border-top: 1px solid $body
 	border-bottom: 1px solid $body
 	+clr
+	+r(892)
+		padding-right: 20px
 	.btn__red
 		float: left
 		margin: 0 10px 0 25px
 		position: relative
 		padding: 0 26px
+		+r(640)
+			float: right
+			margin: 0 0 0 10px
+		+r(370)
+			padding: 0 15px
 		span
 			line-height: 45px
 			padding-left: 30px
@@ -202,6 +215,9 @@
 			position: absolute
 			top: 8px
 			left: 25px
+			+r(370)
+				left: 15px
+				top: 10px
 	.btn__transparent
 		position: relative
 		float: left
@@ -228,6 +244,9 @@
 			left: 32%
 		+r(780)
 			left: 26%
+		+r(400)
+			left: 18%
+			top: 13px
 
 .product__buy_price
 	float: left
@@ -237,11 +256,18 @@
 		text-transform: uppercase
 		+lbl
 		margin-right: 20px
+		+r(640)
+			margin-right: 10px
+			font-size: 20px
+			line-height: 45px
 	strong
 		font-size: 27px
 		text-transform: uppercase
 		color: $black
 		+lbl
+		+r(640)
+			font-size: 20px
+			line-height: 45px
 
 .product__delivery_cost
 	float: left
@@ -266,6 +292,7 @@
 	+r(980)
 		width: 48%
 		float: right
+		margin-top: 10px
 	strong
 		display: inline-block
 		margin-top: 10px
@@ -273,13 +300,17 @@
 	float: left
 	margin-right: 20px
 	margin-top: 10px
+	+r(640)
+		margin-right: 0
 	strong
 		margin-top: 0
 		color: $black
 		+lb
 	.select
-		width: 200px
+		width: 180px
 		margin: 1px 20px 0 10px
+		+r(340)
+			margin: 1px 5px 0 5px
 		&__text
 			height: 18px
 			line-height: 1
@@ -292,8 +323,8 @@
 			border-bottom: 1px dotted $red
 			&:before
 				+arr(7, 5, $black, b)
-				top: 2px
-				right: 10px
+				top: 4px
+				right: -15px
 				background-image: none
 		&__list
 			top: 18px
@@ -305,9 +336,12 @@
 	float: right
 	width: 15%
 	background-color: #FFF
-	padding: 20px 20px 0
+	// padding: 20px 20px 0
 	border-bottom: 1px solid $body
 	+clr
+	&:last-child
+		margin-top: 25px
+		padding-top: 20px
 	+r(1140)
 		width: 49%
 		float: left
@@ -317,7 +351,9 @@
 		&:last-child
 			margin-right: 0
 			float: right
-			height: 201px
+			min-sheight: 212px
+	.title__category
+		margin: 15px 20px
 	&_wrap
 		padding: 0px 0 30px
 		text-align: center
@@ -332,19 +368,21 @@
 				background-color: $red
 				color: #FFF
 				border: 1px solid $n
+			+r(1140)
+				margin-top: 20px
 .box__original
 	float: right
-	width: 15%
+	width: 100%
 	background-color: #FFF
 	padding: 20px
-	margin-bottom: 15px
+	border-top: 1px solid $body
 	+clr
 	+r(1140)
 		float: none
 		width: 100%
-		padding: 0
+		padding: 10px 20px
 .seller__info
-	margin-top: 20px
+	margin: 15px 20px
 	strong
 		margin-top: 10px
 		+lb
@@ -365,9 +403,18 @@
 	margin-bottom: 30px
 	+r(1140)
 		margin-bottom: 0
+	+r(640)
+		display: none
 .orginal_page
 	width: 80%
 	vertical-align: top
+	font-size: 14px
+	color: $black
+	+lr
+	+r(640)
+		width: 100%
+	&:hover
+		color: $red
 
 .surprice
 	margin-top: 25px
@@ -380,6 +427,10 @@
 		background-color: #FFF
 		border-right: 1px solid $body
 		text-align: center
+		+r(767)
+			width: 100%
+			border-right: 0
+			border-bottom: 1px solid $body
 		&:last-child
 			border-right: 1px solid #fff
 		&_wrap
