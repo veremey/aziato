@@ -6,12 +6,20 @@
 	padding-bottom: 35px
 	background-color: #FFF
 	+clr
+	+r(1140)
+		width: 100%
+		margin-right: 0
+	+r(700)
+		padding: 20px
 	&__img
 		float: left
 		width: 300px
 		margin-right: 25px
 		background-color: #FFF
 		+clr
+		+r(700)
+			width: 100%
+			margin-right: 0
 		&_big
 			position: relative
 			top: auto
@@ -49,6 +57,10 @@
 		width: calc(100% - 325px)
 		float: left
 		+clr
+		+r(700)
+			width: 100%
+			float: none
+			padding: 20px
 	.title__category
 		font-weight: 400
 	&__favorite
@@ -70,8 +82,15 @@
 .option__size
 	float: left
 	margin-right: 65px
+	+r(980)
+		width: 100%
+		text-align: center
+		margin: 0
 .option__wrap
 	margin-top: 10px
+	+clr
+	+r(980)
+		margin: 10px auto
 	.is_active
 		border-color: $red
 		background-color: $red
@@ -100,9 +119,16 @@
 	+lr
 	&:hover
 		color: $red
+	+r(980)
+		float: none
+		display: inline-block
 .option__color
 	float: left
 	margin-right: 45px
+	+r(980)
+		width: 48%
+		text-align: center
+		margin: 20px 0 0
 .option__color_item
 	position: relative
 	display: inline-block
@@ -111,6 +137,8 @@
 	-webkit-border-radius: 100%
 	border-radius: 100%
 	margin-right: 7px
+	+r(980)
+		margin-top: 10px
 	&.is_active
 		&:after
 			content: ""
@@ -122,6 +150,12 @@
 
 .option__sum
 	float: left
+	+clr
+	+r(980)
+		float: right
+		width: 48%
+		text-align: center
+		margin: 20px 0 0
 .option__sum_wrap
 	position: relative
 	width: 85px
@@ -132,6 +166,8 @@
 	border-radius: 5px
 	padding: 5px
 	+clr
+	+r(980)
+		margin: 10px auto 0
 	.icon-minus
 		float: left
 		color: $red
@@ -171,6 +207,9 @@
 		float: left
 		color: $black
 		border: 1px solid $gray
+		+r(892)
+			margin-top: 10px
+			width: 100%
 		&:hover
 			background-color: $red
 			border-color: $n
@@ -185,6 +224,10 @@
 		position: absolute
 		top: 10px
 		left: 20px
+		+r(892)
+			left: 32%
+		+r(780)
+			left: 26%
 
 .product__buy_price
 	float: left
@@ -200,9 +243,29 @@
 		color: $black
 		+lbl
 
-.product__delivery
+.product__delivery_cost
 	float: left
 	margin: 20px 0 30px
+	+r(980)
+		width: 100%
+	strong
+		display: inline-block
+		margin-top: 10px
+.product__delivery_time
+	float: left
+	margin: 20px 70px 30px 0
+	+r(980)
+		width: 48%
+		margin: 10px 4% 10px 0
+	strong
+		display: inline-block
+		margin-top: 10px
+.product__delivery_waga
+	float: left
+	margin: 20px 0 30px
+	+r(980)
+		width: 48%
+		float: right
 	strong
 		display: inline-block
 		margin-top: 10px
@@ -245,6 +308,16 @@
 	padding: 20px 20px 0
 	border-bottom: 1px solid $body
 	+clr
+	+r(1140)
+		width: 49%
+		float: left
+		margin-right: 1.5%
+		vertical-align: top
+		margin-top: 25px
+		&:last-child
+			margin-right: 0
+			float: right
+			height: 201px
 	&_wrap
 		padding: 0px 0 30px
 		text-align: center
@@ -259,6 +332,17 @@
 				background-color: $red
 				color: #FFF
 				border: 1px solid $n
+.box__original
+	float: right
+	width: 15%
+	background-color: #FFF
+	padding: 20px
+	margin-bottom: 15px
+	+clr
+	+r(1140)
+		float: none
+		width: 100%
+		padding: 0
 .seller__info
 	margin-top: 20px
 	strong
@@ -279,6 +363,8 @@
 	vertical-align: top
 	margin-right: 10px
 	margin-bottom: 30px
+	+r(1140)
+		margin-bottom: 0
 .orginal_page
 	width: 80%
 	vertical-align: top
