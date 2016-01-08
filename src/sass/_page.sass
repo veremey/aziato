@@ -328,9 +328,14 @@
 				background-image: none
 		&__list
 			top: 18px
+			+r(700)
+				background-color: $body
 			li
 				line-height: 20px
 				padding: 0
+				+r(700)
+					margin-bottom: 10px
+					padding-left: 10px
 
 .box__seller
 	float: right
@@ -487,15 +492,25 @@
 				color: #FFF
 	&__charactristics
 		+clr
+		+r(640)
+			padding-bottom: 20px
 	&__text
 		border-top: 1px solid $body
 		border-bottom: 1px solid $body
 		+clr
+		+r(640)
+			margin-bottom: 15px
 		&_list
 			padding-top: 25px
 			width: 50%
+			+r(700)
+				width: 100%
+				&:nth-child(even)
+					padding-top: 0
 			&.get__left
 				border-right: 1px solid $body
+				+r(700)
+					border-right: 0
 		p
 			font-size: 14px
 			margin-bottom: 25px
@@ -506,16 +521,29 @@
 				width: 30%
 				padding-left: 40px
 				color: $gray
+				+r(700)
+					width: 48%
 			strong
 				float: right
 				width: 67%
 				+lb
+				+r(700)
+					width: 48%
 	&__img
 		width: 50%
+		+r(640)
+			width: 80%
+			margin: 0 auto
 		&.get__left
 			padding: 35px 10px 35px 45px
+			+r(640)
+				padding: 20px 0 15px
+				float: none
 		&.get__right
 			padding: 35px 45px 35px 10px
+			+r(640)
+				padding: 20px 0 15px
+				float: none
 		&:hover
 			.detail__img_over
 				visibility: visible

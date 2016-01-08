@@ -71,10 +71,23 @@
 	position: relative
 	width: 23.3%
 	display: inline-block
-	margin-right: 2%
+	margin-right: 1.9%
+	vertical-align: top
 	+clr
+	+r(860)
+		width: 49%
+		float: left
+		margin: 0 0 20px 0
+		&:nth-child(even)
+			float: right
+		// &:nth-child(even)
+		// 	mr
+	+r(640)
+		width: 100%
+		float: none
 	&:nth-child(4n)
 		margin-right: 0
+
 // .box__sm  //face - cloth
 // 	position: relative
 // 	width: 14.5%
@@ -105,6 +118,8 @@
 			color: $red
 			+lr
 			+tr(.3s)
+			+r(640)
+				display: none
 			&:hover
 				color: black
 	&__btn
