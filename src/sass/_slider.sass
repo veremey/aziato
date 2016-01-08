@@ -7,6 +7,8 @@
 	margin-right: 30px
 	vertical-align: top
 	+clr
+	+r(765)
+		margin-right: 0
 	&_m,
 	&_transparent
 		background-color: #FFF
@@ -17,7 +19,7 @@
 		padding: 20px
 		+clr
 		+r(765)
-			width: 97vw
+			width: auto
 	&_transparent
 		padding: 0
 		background-color: $n
@@ -79,11 +81,17 @@
 	margin-bottom: 20px
 	+clr
 
+.slider__comment
+	.comment__user_wrap
+		+r(765)
+			width: 50%
+		+r(480)
+			width: 100%
 .slider__comment_item
 	background-color: #FFF
 	margin-right: 25px
 	+clr
-	+r(640)
+	+r(765)
 		margin-right: 0
 	//больше на index.html
 
@@ -130,7 +138,7 @@
 		+r(480)
 			width: 60%
 		+r(360)
-			width: 70%
+			width: 85%
 	.comment__text
 		width: 75%
 		margin: 0 auto

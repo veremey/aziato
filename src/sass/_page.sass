@@ -247,7 +247,6 @@
 		+r(400)
 			left: 18%
 			top: 13px
-
 .product__buy_price
 	float: left
 	s
@@ -260,6 +259,8 @@
 			margin-right: 10px
 			font-size: 20px
 			line-height: 45px
+		+r(330)
+			margin-right: 5px
 	strong
 		font-size: 27px
 		text-transform: uppercase
@@ -309,8 +310,9 @@
 	.select
 		width: 180px
 		margin: 1px 20px 0 10px
-		+r(340)
-			margin: 1px 5px 0 5px
+		+r(350)
+			margin: 5px 5px 0 5px
+			width: 100%
 		&__text
 			height: 18px
 			line-height: 1
@@ -466,10 +468,21 @@
 			border-top: 1px solid #fff
 			padding: 0 25px
 			+tr(.3s)
+			+r(1220)
+				padding: 0 15px
+			+r(1160)
+				width: 100%
+				padding: 0 30px
+			+r(767)
+				height: 65px
 			&.is_active
 				border-top-color: $red
 				.btn__transparent
 					visibility: visible
+				+r(1160)
+					h3
+						font-weight: 800
+						text-decoration: none
 			&:hover
 				border-top-color: $gray
 				h3
@@ -479,6 +492,11 @@
 			line-height: 78px
 			color: $black
 			+lb
+			+r(1160)
+				font-size: 16px
+				line-height: 1.2
+				text-decoration: underline
+				margin-top: 20px
 		.btn__transparent
 			position: absolute
 			top: 17px
@@ -487,6 +505,8 @@
 			visibility: hidden
 			color: $black
 			border: 1px solid $body
+			+r(1160)
+				display: none
 			&:hover
 				background-color: $red
 				color: #FFF
@@ -574,11 +594,27 @@
 			border-top: 1px solid $body
 			border-bottom: 1px solid $body
 			+clr
+			+r(1160)
+				height: 180px
+			+r(750)
+				height: auto
+				padding-bottom: 25px
 			&_total
+				position: relative
 				float: left
 				width: 290px
 				border-right: 1px solid $body
 				padding: 35px 35px 29px
+				+r(1160)
+					height: 180px
+					padding-top: 40px
+				+r(750)
+					border: none
+					width: 100%
+					padding: 20px 20px 10px
+					height: auto
+				+r(479)
+					padding-bottom: 60px
 				h5
 					display: inline-block
 					font-size: 18px
@@ -598,21 +634,62 @@
 					color: #FFF
 					margin-left: 15px
 					+lb
+				.btn__transparent
+					position: absolute
+					bottom: 30px
+					left: 30px
+					border: 1px solid $body
+					color: $black
+					display: none
+					+tr(.3s)
+					&:hover
+						color: #FFF
+						background-color: $red
+					+r(1160)
+						display: block
+					+r(750)
+						top: 20px
+						bottom: auto
+						left: auto
+						right: 20px
+					+r(479)
+						top: auto
+						right: auto
+						bottom: 0px
+						left: 10%
+						width: 80%
+						// width: auto
 		&_bottom
 			padding: 55px 0
 			background-color: #FFF
 			+clr
+			+r(767)
+				padding: 55px 10px
+			.center__container
+				+r(767)
+					width: 100%
 		&_rate
 			width: calc(100% - 290px)
 			float: left
 			+clr
+			+r(1160)
+				padding-right: 25px
+			+r(750)
+				width: 100%
 			&_item
 				height: 100%
 				padding-top: 35px
 				float: left
 				width: 23%
+				height: 76px
 				padding-left: 30px
 				+box
+				+r(1160)
+					width: 49%
+					&:nth-child(even)
+						float: right
+				+r(750)
+					width: 100%
 				h6
 					font-size: 14px
 					margin-bottom: 10px
@@ -633,24 +710,38 @@
 	float: left
 	text-align: right
 	padding-top: 15px
+	min-width: 200px
 	+clr
 	p
 		float: right
 		color: $gray
 		font-size: 14px
 		+lr
+		+r(767)
+			float: left
+			margin-left: 10px
 	strong
 		+lb
+	.stars
+		+r(767)
+			float: left
+			margin-bottom: 10px
 .feadback__text
 	position: relative
-	width: 75%
+	width: calc(100% - 235px)
 	float: right
 	border: 1px solid $body
 	padding: 25px 50px 25px 35px
+	+r(767)
+		width: 100%
+		border: none
+		padding: 25px 10px
 	&:before
 		content: ""
 		position: absolute
 		top: 20px
 		left: -20px
 		+s(icon-feadback)
+		+r(767)
+			content: none
 

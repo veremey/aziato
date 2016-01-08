@@ -163,7 +163,16 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 20000,
 		prevArrow: $('.js-slider__back'),
-		nextArrow: $('.js-slider__next')
+		nextArrow: $('.js-slider__next'),
+		responsive: [
+			{
+				breakpoint: 765,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			},
+		]
 	});
 
 	//slider comment
@@ -186,7 +195,7 @@ $(document).ready(function() {
 				}
 			},
 			{
-				breakpoint: 750,
+				breakpoint: 765,
 				settings: {
 					slidesToShow: 1,
 				}

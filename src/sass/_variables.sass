@@ -56,7 +56,11 @@
 	width: 65.5%
 	float: left
 	overflow: hidden
+	margin-bottom: 20px
 	+clr
+	+r(767)
+		width: 100%
+		float: none
 	.slider__item_x
 		width: 100%
 .box__s
@@ -64,6 +68,9 @@
 	width: 31%
 	float: right
 	+clr
+	+r(767)
+		width: 100%
+		float: none
 	.slider__item_transparent
 		width: 100%
 		height: auto
@@ -100,15 +107,17 @@
 	height: 60px
 	padding: 0 25px
 	margin: 25px 0
+	+clr
 	+r(768)
 		height: auto
 		min-height: 65px
-		padding: 0 10px 0 25px
+		padding: 15px 10px 0 25px
 	.title__section
 		max-width: 80%
 		+r(768)
+			float: left
 			line-height: 1.2
-			margin: 10px 0
+			margin: 10px 10px 10px 0
 	&__btn,
 	&__right
 		float: right
@@ -125,12 +134,20 @@
 	&__btn
 		+r(768)
 			width: 35px
-			margin-top: 3px
+			// margin-top: 3px
+			margin-top: 0
+			margin-bottom: 5px
 	.goods
 		display: inline-block
 		width: 135px
 		vertical-align: top
 		margin: 10px 0 0 30px
+		+r(768)
+			margin: 0 0 0 10px
+			float: right
+		+r(400)
+			float: left
+			margin: 0 0 10px 0
 		strong
 			display: inline-block
 			width: 40px
@@ -311,17 +328,14 @@
 	height: 5px
 	width: 100%
 	+gh(#ffd907 83.3%, #edeff1 83.4%)
-
 .status__neitral
 	height: 5px
 	width: 100%
 	+gh(#ff8707 8.3%, #edeff1 8.4%)
-
 .status__negative
 	height: 5px
 	width: 100%
 	+gh(#ea1b24 8.3%, #edeff1 8.4%)
-
 input
 	&:focus
 		border-color: $gray
