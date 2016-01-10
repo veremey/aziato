@@ -71,6 +71,15 @@ $(document).ready(function() {
 		carousel.find('.js-swing__img img').attr('src', carousel.find('.is_active img').attr('src'));
 	});
 
+	//подмена текста
+	$('.currency__list a').on('click', function()
+		{
+			var text = $(this).html();
+
+			$(this).siblings().removeClass('is_active');
+			$(this).addClass('is_active').closest('.currency').find('.is_visible').html(text);
+		});
+
 	//option choose
 	$('.js-option a:not(.is_disable)').on('click', function() {
 		$(this).addClass('is_active').siblings().removeClass('is_active');

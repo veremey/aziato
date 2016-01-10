@@ -32,8 +32,8 @@
 		margin-top: 25px
 		+r(1140)
 			width: 254px
-		+r(880)
-			width: 150px
+		+r(920)
+			width: 135px
 			margin-top: 13px
 		+r(765)
 			display: none
@@ -120,35 +120,76 @@
 
 .currency
 	position: relative
-	width: 130px
 	float: left
 	margin-left: 11%
-	+r(980)
+	+r(1060)
 		margin-left: 40px
 	+r(930)
 		margin-left: 20px
-		width: 103px
+	&.lang//
+		margin-left: 0//
+		.currency__active
+			margin-right: 0
+	&__active
+		position: relative
+		height: 70px
+		width: 50px
+		margin-right: 35px
+		z-index: 500
+		+tr(.5s)
+		+r(800)
+			margin-right: 5px
+		+r(765)
+			height: 40px
+			margin-right: 15px
+		&:hover
+			.currency__list
+				height: auto
+				padding: 5px 0 5px 10px
+				+tr(.3s)
+		&:after
+			content: ""
+			position: absolute
+			top: 33px
+			right: 2px
+			+arr(7, 5, #848484, b)
+			+r(765)
+				top: 20px
+		.is_visible
+			line-height: 70px
+			+r(765)
+				line-height: 40px
+	&__list
+		position: absolute
+		top: 50px
+		left: -10px
+		height: 0
+		padding-left: 10px
+		width: calc(100% + 10px)
+		overflow: hidden
+		background-color: #fff
+		+tr(.3s)
+		+r(765)
+			top: 33px
+		.is_active
+			color: #bec3c8
+			&:hover
+				color: #bec3c8
+				cursor: default
 	a
 		position: relative
-		float: left
-		margin-right: 35px
-		margin-top: 25px
+		// float: left
+		display: block
+		// margin-top: 25px
+		line-height: 23px
 		text-transform: uppercase
 		font-size: 13px
 		color: $black
 		+lbl
-		+r(930)
-			margin-right: 25px
-		+r(765)
-			margin-top: 15px
+
 		&:hover
 			color: $red
-		&:after
-			content: ""
-			position: absolute
-			top: 6px
-			right: -12px
-			+arr(7, 5, #848484, b)
+
 
 .select
 	position: relative
