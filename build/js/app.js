@@ -161,6 +161,17 @@ $(document).ready(function() {
 		$(this).closest('.js-basket-close').hide();
 	});
 
+	//slider bigest (main)
+	$('.bigest').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 1000,
+	});
+
 	//slider delivery
 	$('.slider__delivery').slick({
 		infinite: true,
