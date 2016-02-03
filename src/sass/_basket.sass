@@ -112,6 +112,14 @@
 				display: block
 				text-align: center
 				margin-top: 20px
+			&.show640
+				display: none
+				+r(640)
+					display: block
+					width: 100%
+				.btn__transparent
+					+r(640)
+						width: 100%
 			p
 				font-size: 14px
 				color: $black

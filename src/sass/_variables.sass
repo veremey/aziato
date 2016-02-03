@@ -6,6 +6,10 @@
 	display: none
 	+r(768)
 		display: block
+.show640
+	display: none
+	+r(640)
+		display: block
 .hide640
 	+r(640)
 		display: none
@@ -167,9 +171,9 @@
 		height: 60px
 		margin-left: 30px
 		vertical-align: top
-		+r(915)
+		+r(950)
 			margin-left: 15px
-		+r(830)
+		+r(862)
 			display: none
 		a
 			display: inline-block
@@ -178,7 +182,7 @@
 			line-height: 15px
 			color: $black
 			+lr
-			+r(915)
+			+r(950)
 				padding: 22px 15px
 			&:hover
 				color: $red
@@ -268,6 +272,7 @@
 			content: none
 
 .bay
+	position: relative
 	display: block
 	height: 40px
 	width: 170px

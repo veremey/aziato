@@ -48,6 +48,14 @@
 .alist
 	font-size: 0
 	+clr
+	&.no-icons
+		i[class^='icon-']
+			display: none
+		.alist__item_link
+			+r(1240)
+				padding-left: 35px
+			+r(1140)
+				padding-left: 20px
 	&__item
 		position: relative
 		height: 59px
@@ -82,7 +90,11 @@
 				display: block
 		&.more
 			height: 110px
-			padding: 20px 0
+			padding: 20px 0 20px 55px
+			+r(1240)
+				padding-left: 35px
+			+r(1140)
+				padding-left: 20px
 			&:after
 				content: none
 			h4
